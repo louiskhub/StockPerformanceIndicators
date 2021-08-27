@@ -9,7 +9,7 @@ import update
 
 def visual_f_score(ticker_input, df, csv_list):
     """Visualizes the Piotroski F-Score.
-    Explanation of the Piotroski F-Score: 
+    Explanation of the Score: https://www.investopedia.com/terms/p/piotroski-score.asp
     """
 
     main_ticker = str(ticker_input)

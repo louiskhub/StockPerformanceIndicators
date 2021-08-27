@@ -3,7 +3,7 @@ import pandas as pd
 
 download_link_1 = "https://eodhistoricaldata.com/api/exchange-symbol-list/"
 download_link_2 = "?api_token="
-token = "" # Enter your token here
+token = "" # Enter your token here (You get one when creating a free account)
 """
 usa = pd.read_csv(download_link_1 + "US" + download_link_2 + token, index_col=0)
 london = pd.read_csv(download_link_1 + "LSE" + download_link_2 + token, index_col=0)

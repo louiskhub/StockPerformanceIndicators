@@ -32,13 +32,13 @@ def user_terminal():
 
             input_value = user_input()
             if input_value == 1:
-                visualize(input_value)
+                visualize(1)
             elif input_value == 2:
-                visualize(input_value)
+                visualize(2)
             elif input_value == 3:
-                visualize(peg_ratio)
+                visualize(1)
             elif input_value == 4:
-                visualize(peg_ratio)
+                visualize(2)
 
     except KeyboardInterrupt:
         print("\n\nInterrupted!")
