@@ -3,13 +3,15 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 # local imports
-import piotroski
-import peg
+from indicators import piotroski
+from indicators import peg
 
 def csv(ticker, csv_list, ticker_in_df):
     
     filepath = "cache/usa.csv"
-    df = pd.read_csv(filepath, index_col=0)
+    df_usa = pd.read_csv(filepath, index_col=0)
+    df = df_usa
+    index = df.index.size - 1
 
     yf_ticker = yf.Ticker(ticker)
     info = yf_ticker.info
@@ -21,6 +23,7 @@ def csv(ticker, csv_list, ticker_in_df):
             if (frame.Code == ticker).any():
                 filepath = path
                 df = frame
+                index = df.loc[(df.Code == ticker), "Code"].index.item()
                 break
     else:
         for path in df_array:
@@ -28,10 +31,8 @@ def csv(ticker, csv_list, ticker_in_df):
             if (frame.Country == info['country']).any():
                 filepath = path
                 df = frame
-                df = df.append(pd.Series(dtype='object'), ignore_index=True)
                 break
-    
-    index = df.index.size - 1
+        df = df.append(pd.Series(dtype='object'), ignore_index=True)
 
     df.loc[index, "Code"] = ticker
     df.loc[index, "Country"] = country
@@ -45,6 +46,7 @@ def csv(ticker, csv_list, ticker_in_df):
     df.loc[index, "200 Day Av"] = info['twoHundredDayAverage']
     df.loc[index, "Profit Margin"] = info['profitMargins']
     df.loc[index, "Gross Margin"] = info['grossMargins']
-    df.to_csv("cache/cache.csv")
 
     df.to_csv(filepath)
+
+    pass

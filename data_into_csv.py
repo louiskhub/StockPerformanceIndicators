@@ -4,10 +4,8 @@ import pandas as pd
 import numpy as np
 import concurrent.futures
 # local imports
-import piotroski
-import peg
-
-
+from indicators import piotroski
+from indicators import peg
 
 
 def scrape_data(args):
@@ -31,37 +29,49 @@ def scrape_data(args):
         sector = np.nan
     try:
         country = info['country']
+        if country == "nan":
+            sector = np.nan
     except:
         country = np.nan
     try:
         priceToBook = info['priceToBook']
+        if priceToBook == "nan":
+            sector = np.nan
     except:
         priceToBook = np.nan
     try:
         marketCap = info['marketCap']
+        if marketCap == "nan":
+            sector = np.nan
     except:
         marketCap = np.nan
     try:
         fiftyDayAverage = info['fiftyDayAverage']
+        if fiftyDayAverage == "nan":
+            sector = np.nan
     except:
         fiftyDayAverage = np.nan
     try:
         twoHundredAverage = info['twoHundredDayAverage']
+        if twoHundredAverage == "nan":
+            sector = np.nan
     except:
         twoHundredAverage = np.nan
     try:
         profitMargin = info['profitMargins']
+        if profitMargin == "nan":
+            sector = np.nan
     except:
         profitMargin = np.nan
     try:
         grossMargin = info['grossMargins']
+        if grossMargin == "nan":
+            sector = np.nan
     except:
         grossMargin = np.nan
 
     print(str(args[1]) + " / " + str(args[2]))
     return score, ratio, industry, sector, country, priceToBook, marketCap, fiftyDayAverage, twoHundredAverage, profitMargin, grossMargin
-
-
 
 
 def data_into_csv():
@@ -127,10 +137,3 @@ def data_into_csv():
     csv.to_csv("cache/out.csv")
 
     return "\n\n'" + csv_input + "' successfully modified!"
-
-
-
-
-# BOILERPLATE
-if __name__ == "__main__":
-    print(data_into_csv())
