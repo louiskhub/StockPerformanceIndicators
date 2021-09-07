@@ -14,7 +14,7 @@ The user is asked to select a stock PI after running the `main.py` and can then 
 - country
 - industry (Explanation: https://www.investopedia.com/terms/i/industry.asp)
 - sector (Explanation: https://www.investopedia.com/terms/s/sector.asp)
-- market capitalization category (Mega/Large/Mid/Small/Micro Cap) (Explanation: https://www.investopedia.com/terms/m/marketcapitalization.asp under `Market Cap and Investment Strategy`)
+- market capitalization category (Mega/Large/Mid/Small/Micro Cap) (Explanation: https://www.investopedia.com/terms/m/marketcapitalization.asp under **Market Cap and Investment Strategy**)
 
 To retreive the data needed for these indicators I used the libary yfinance which scrapes Yahoo! Finance.
 All the visualizations are done with matplotlib.
