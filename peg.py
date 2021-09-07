@@ -15,12 +15,13 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
     main_ticker = str(ticker_input)
     
     ticker_in_df = (df.Code == main_ticker).any()
-    peg_in_df = df.loc[(df.Code == main_ticker),"PEG ratio"].notna().any()
+    peg_in_df = df.loc[(df.Code == main_ticker),"PEG-Ratio"].notna().any()
 
     if ticker_in_df & peg_in_df:
-        main_ratio = df.loc[(df.Code == main_ticker), "PEG ratio"]
+        main_ratio = df.loc[(df.Code == main_ticker), "PEG-Ratio"]
         main_index = df[df["Code"] == main_ticker].index.item()
-        df = df.drop(index=main_index)
+        df.drop(index=main_index, inplace=True)
+        df.reset_index(drop=True, inplace=True)
     else:
         yf_ticker = yf.Ticker(main_ticker)
         if yf_ticker.info["regularMarketPrice"] == None:
@@ -29,7 +30,7 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
         if main_ratio == None:
             raise errors.MetricError(main_ticker)
         if ticker_in_df:
-            df.loc[(df.Code == main_ticker),"PEG ratio"] = main_ratio
+            df.loc[(df.Code == main_ticker),"PEG-Ratio"] = main_ratio
         else:
             usa_df = pd.read_csv("cache/usa.csv", index_col=0)
             update.csv(main_ticker, csv_list, ticker_in_df)
@@ -43,11 +44,11 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
         print("Please select a maximum scope above " + str(main_ratio) + "\n")
         return visualize(1)
     
-    ratio_notna = df.loc[:,"PEG ratio"].notna()
-    ratio_max = df.loc[:,"PEG ratio"] < scope[0]
-    ratio_min = df.loc[:,"PEG ratio"] > scope[1]
+    ratio_notna = df.loc[:,"PEG-Ratio"].notna()
+    ratio_max = df.loc[:,"PEG-Ratio"] < scope[0]
+    ratio_min = df.loc[:,"PEG-Ratio"] > scope[1]
     
-    arr = df.loc[(ratio_notna & ratio_max & ratio_min),["Code","PEG ratio"]].values
+    arr = df.loc[(ratio_notna & ratio_max & ratio_min),["Code","PEG-Ratio"]].values
     tickers = arr[:,0]
     y = arr[:,1]
     sorted_indices = y.argsort(kind="quicksort")
@@ -60,7 +61,7 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
     ax = fig.add_subplot()
 
     ax.set(
-        title = "PEG ratios",
+        title = "PEG-Ratios",
         ylim = [np.amin(y), np.amax(y)],
         #yticks = np.arange(10),
         xlim = [-10, x.size + 10],

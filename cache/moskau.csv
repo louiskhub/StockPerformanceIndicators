@@ -1,313 +1,259 @@
-,Code,Name,Country,Exchange,Currency,Type,Isin,F-Score,PEG ratio,Industry,Sector,Price to Book,Market Cap,50 Day Av,200 Day Av,Profit Margin,Gross Margin
-0,APTK.ME,Public Joint-Stock Company Pharmacy Chain 36.6,,MCX,RUB,Common Stock,RU0008081765,,,,,,,,,,
-1,AQUA.ME,PJSC Russian Aquaculture,,MCX,RUB,Common Stock,RU000A0JQTS3,,,,,,,,,,
-2,ARSA.ME,Arsagera Asset Management,,MCX,RUB,Common Stock,RU000A0JP0Q7,,,,,,,,,,
-3,ASSB.ME,Astrakhan Power Sale Company Public Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0D8MM8,,,,,,,,,,
-4,AVAN.ME,AVANGARD Joint Stock BANK,,MCX,RUB,Common Stock,RU000A0DM7B3,,,,,,,,,,
-5,BANE.ME,Public Joint Stock Oil Company Bashneft,,MCX,RUB,Common Stock,RU0007976957,,,,,,,,,,
-6,BANEP.ME,Public Joint Stock Oil Company Bashneft,,MCX,RUB,Common Stock,,,,,,,,,,,
-7,BELU.ME,Beluga Group Public Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0HL5M1,,,,,,,,,,
-8,BISVP.ME,Public Joint-Stock Company Bashinformsvyaz RUB1 PRF'A'(USD),,MCX,RUB,Common Stock,,,,,,,,,,,
-9,BLNG.ME,Belon Joint Stock Company,,MCX,RUB,Common Stock,RU000A0J2QG8,,,,,,,,,,
-10,BRZL.ME,Public Joint Stock Company Buryatzoloto,,MCX,RUB,Common Stock,RU0009288658,,,,,,,,,,
-11,BSPB.ME,"""Bank ""Saint-Petersburg"" Public Joint-Stock Company",,MCX,RUB,Common Stock,RU0009100945,,,,,,,,,,
-12,CBOM.ME,Credit Bank of Moscow (public joint-stock company),,MCX,RUB,Common Stock,RU000A0JUG31,,,,,,,,,,
-13,CHEP.ME,"Public Joint Stock Company ""Chelyabinsk Pipe-Rolling Plant""",,MCX,RUB,Common Stock,RU0009066807,,,,,,,,,,
-14,CHGZ.ME,Public Joint Stock Company RN-Western Siberia,,MCX,RUB,Common Stock,RU0009082291,,,,,,,,,,
-15,CHKZ.ME,Chelyabinsk Forge-and-Press Plant Public Joint Stock Company,,MCX,RUB,Common Stock,RU000A0JNST0,,,,,,,,,,
-16,CHMF.ME,Public Joint Stock Company Severstal,,MCX,RUB,Common Stock,RU0009046510,,,,,,,,,,
-17,CHMK.ME,Chelyabinsk Metallurgical Plant PAO,,MCX,RUB,Common Stock,RU0007665170,,,,,,,,,,
-18,CNTL.ME,Central Telegraph Public Joint Stock Company,,MCX,RUB,Common Stock,RU0007665147,,,,,,,,,,
-19,CNTLP.ME,Central Telegraph Public Joint Stock Company,,MCX,RUB,Common Stock,,,,,,,,,,,
-20,DASB.ME,Dagestan Energy Supply Company Public Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0F63G0,,,,,,,,,,
-21,DIOD.ME,DIOD Maker of Eco-Friendly Equipment and Nutrition Public Joint Stock Company,,MCX,RUB,Common Stock,RU000A0JQWC1,,,,,,,,,,
-22,DIVD.ME,DOKHOD Indeks dividenddnykh aktsiy RF BPIFRFI,,MCX,RUB,ETF,,,,,,,,,,,
-23,DSKY.ME,Public Joint Stock Company Detsky Mir,,MCX,RUB,Common Stock,RU000A0JSQ90,,,,,,,,,,
-24,DVEC.ME,Public joint stock company FAR-EASTERN ENERGY COMPANY,,MCX,RUB,Common Stock,RU000A0JP2W1,,,,,,,,,,
-25,DZRD.ME,DONSKOY FACTORY OF RADIOCOMPONENTS Open Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0JQW11,,,,,,,,,,
-26,DZRDP.ME,DONSKOY FACTORY OF RADIOCOMPONENTS Open Joint-Stock Company,,MCX,RUB,Common Stock,,,,,,,,,,,
-27,EELT.ME,European Eltech Public Joint Stock Company,,MCX,RUB,Common Stock,RU000A0JWW54,,,,,,,,,,
-28,ELTZ.ME,Electrozink Public Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0B66V1,,,,,,,,,,
-29,ENPG.ME,En+ Group International public joint-stock company,,MCX,RUB,Common Stock,RU000A100K72,,,,,,,,,,
-30,ENRU.ME,Public Joint-Stock Company Enel Russia,,MCX,RUB,Common Stock,RU000A0F5UN3,,,,,,,,,,
-31,ESGR.ME,ESGR ETF RSHB-MOEX-RSPP VecTR,,MCX,RUB,ETF,,,,,,,,,,,
-32,ETLN.ME,Etalon Group PLC,,MCX,RUB,Common Stock,,,,,,,,,,,
-33,FEES.ME,Public Joint-Stock Company Federal Grid Company of Unified Energy System,,MCX,RUB,Common Stock,RU000A0JPNN9,,,,,,,,,,
-34,FESH.ME,Far-Eastern Shipping Company PLC,,MCX,RUB,Common Stock,RU0008992318,,,,,,,,,,
-35,FIVE.ME,X5 Retail Group N.V,,MCX,RUB,Common Stock,US98387E2054,,,,,,,,,,
-36,FLOT.ME,Sovcomflot Pao,,MCX,RUB,Common Stock,RU000A0JXNU8,,,,,,,,,,
-37,FMUS.ME,Dividendnye Aristokraty SShA BPIFRFI,,MCX,RUB,ETF,,,,,,,,,,,
-38,FXCN.ME,FinEx Funds Public Limited Company - FinEx China UCITS ETF,,MCX,RUB,ETF,IE00BD3QFB18,,,,,,,,,,
-39,FXDE.ME,FinEx Funds Public Limited Company - FinEx Germany UCITS ETF,,MCX,RUB,ETF,IE00BD3QJN10,,,,,,,,,,
-40,FXGD.ME,FinEx Physically Backed Funds Public Limited Company - FinEx Gold ETF,,MCX,RUB,ETF,IE00B8XB7377,,,,,,,,,,
-41,FXIM.ME,FinEx USA Info Tech UCITS ETF Minishares USD,,MCX,RUB,ETF,,,,,,,,,,,
-42,FXIT.ME,FinEx Funds Public Limited Company - FinEx USA Information Technology UCITS ETF,,MCX,RUB,ETF,IE00BD3QJ757,,,,,,,,,,
-43,FXKZ.ME,Finex Physically Backed Funds Plc - Finex Ffin Kazakhstan Equity Fund,,MCX,RUB,ETF,IE00BG0C3K84,,,,,,,,,,
-44,FXMM.ME,FinEx Funds Public Limited Company - FinEx Cash Equivalents UCITS ETF,,MCX,RUB,ETF,IE00BL3DYX33,,,,,,,,,,
-45,FXRB.ME,FinEx Funds Public Limited Company - FinEx Tradable Russian Corporate Bonds UCITS ETF,,MCX,RUB,ETF,IE00B7L7CP77,,,,,,,,,,
-46,FXRL.ME,FinEx Funds Public Limited Company - FinEx Russian RTS Equity UCITS ETF,,MCX,RUB,ETF,IE00BQ1Y6480,,,,,,,,,,
-47,FXRU.ME,FinEx Funds Public Limited Company - FinEx Tradable Russian Corporate Bonds UCITS ETF,,MCX,RUB,ETF,IE00B84D7P43,,,,,,,,,,
-48,FXRW.ME,Finex Funds Plc - Finex Global Equity UCITS ETF Fund,,MCX,RUB,ETF,IE00BK224M36,,,,,,,,,,
-49,FXTB.ME,FinEx Funds Public Limited Company - FinEx Cash Equivalents UCITS ETF,,MCX,RUB,ETF,IE00BL3DYW26,,,,,,,,,,
-50,FXUS.ME,FinEx Funds Public Limited Company - FinEx USA UCITS ETF,,MCX,RUB,ETF,IE00BD3QHZ91,,,,,,,,,,
-51,FXWO.ME,Finex Funds Plc - Finex Global Equity UCITS ETF Fund,,MCX,RUB,ETF,IE00BK224L29,,,,,,,,,,
-52,GAZA.ME,Public Joint Stock Company GAZ,,MCX,RUB,Common Stock,RU0009034268,,,,,,,,,,
-53,GAZAP.ME,Public Joint Stock Company GAZ,,MCX,RUB,Common Stock,,,,,,,,,,,
-54,GAZP.ME,Public Joint Stock Company Gazprom,,MCX,RUB,Common Stock,RU0007661625,,,,,,,,,,
-55,GCHE.ME,"Public Joint Stock Company ""Cherkizovo Group""",,MCX,RUB,Common Stock,RU000A0JL4R1,,,,,,,,,,
-56,GEMA.ME,International Medical Center of Biomaterials Processing and Cryostorage Public Joint-stock company,,MCX,RUB,Common Stock,RU000A100GC7,,,,,,,,,,
-57,GEMC.ME,United Medical Group CY PLC,,MCX,RUB,Common Stock,,,,,,,,,,,
-58,GLTR.ME,Globaltrans Investment Plc,,MCX,RUB,Common Stock,,,,,,,,,,,
-59,GMKN.ME,Public Joint Stock Company Mining and Metallurgical Company Norilsk Nickel,,MCX,RUB,Common Stock,RU0007288411,,,,,,,,,,
-60,GPBM.ME,Gazprombank-Korporativnye obligatsii 4goda BPIFRFI,,MCX,RUB,ETF,RU000A1009F0,,,,,,,,,,
-61,GRNT.ME,"Public Joint Stock Company ""City Innovative Technologies""",,MCX,RUB,Common Stock,RU000A0JV532,,,,,,,,,,
-62,GTLC.ME,"Joint-Stock Company "" Gas To Liquid """,,MCX,RUB,Common Stock,RU000A0JTN19,,,,,,,,,,
-63,GTRK.ME,Public Joint Stock Company Globaltruck Management,,MCX,RUB,Common Stock,RU000A0ZYD22,,,,,,,,,,
-64,HHRU.ME,HeadHunter Group PLC,,MCX,RUB,Common Stock,,,,,,,,,,,
-65,HIMCP.ME,Khimprom Public Joint stock company,,MCX,RUB,Common Stock,RU0009099006,,,,,,,,,,
-66,HYDR.ME,Public Joint-Stock Company Federal Hydro-Generating Company - RusHydro,,MCX,RUB,Common Stock,RU000A0JPKH7,,,,,,,,,,
-67,IGST.ME,Izhstal PAO,,MCX,RUB,Common Stock,RU0002155292,,,,,,,,,,
-68,IGSTP.ME,Izhstal PAO,,MCX,RUB,Common Stock,,,,,,,,,,,
-69,INGR.ME,"Public Joint Stock Company ""INGRAD""",,MCX,RUB,Common Stock,RU000A0DJ9B4,,,,,,,,,,
-70,IRAO.ME,Public Joint Stock Company Inter RAO UES,,MCX,RUB,Common Stock,RU000A0JPNM1,,,,,,,,,,
-71,IRGZ.ME,Irkutsk Public Joint Stock Company of Energetics and Electrification,,MCX,RUB,Common Stock,RU0008960828,,,,,,,,,,
-72,IRKT.ME,Irkut Corporation,,MCX,RUB,Common Stock,RU0006752979,,,,,,,,,,
-73,ISKJ.ME,"Public Joint-Stock Company ""Human Stem Cells Institute""",,MCX,RUB,Common Stock,RU000A0JNAB6,,,,,,,,,,
-74,JNOS.ME,Public Joint Stock Company Slavneft-Yaroslavnefteorgsintez,,MCX,RUB,Common Stock,RU0009100895,,,,,,,,,,
-75,JNOSP.ME,Public Joint Stock Company Slavneft-Yaroslavnefteorgsintez,,MCX,RUB,Common Stock,,,,,,,,,,,
-76,KAZT.ME,Public Joint Stock Company KuibyshevAzot,,MCX,RUB,Common Stock,RU000A0B9BV2,,,,,,,,,,
-77,KAZTP.ME,Public Joint Stock Company KuibyshevAzot,,MCX,RUB,Common Stock,,,,,,,,,,,
-78,KBSB.ME,"Public Joint Stock Company ""TNS energo Kuban""",,MCX,RUB,Common Stock,RU000A0JNJ11,,,,,,,,,,
-79,KCHE.ME,Public Joint Stock Company Kamchatskenergo,,MCX,RUB,Common Stock,RU0006753498,,,,,,,,,,
-80,KCHEP.ME,Public Joint Stock Company Kamchatskenergo,,MCX,RUB,Common Stock,,,,,,,,,,,
-81,KGKC.ME,Public Joint Stock Company Kurgan Generation Company,,MCX,RUB,Common Stock,RU000A0JP120,,,,,,,,,,
-82,KGKCP.ME,Public Joint Stock Company Kurgan Generation Company,,MCX,RUB,Common Stock,,,,,,,,,,,
-83,KLSB.ME,Kaluga Power Sale Company Public Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0DKZK3,,,,,,,,,,
-84,KMAZ.ME,KAMAZ Publicly Traded Company,,MCX,RUB,Common Stock,RU0008959580,,,,,,,,,,
-85,KMEZ.ME,Kovrov Mechanical Plant Public Joint-Stock Company,,MCX,RUB,Common Stock,RU0006753613,,,,,,,,,,
-86,KOGK.ME,Korshynov Mining Plant Public Joint Stock Company,,MCX,RUB,Common Stock,RU0002155359,,,,,,,,,,
-87,KRKN.ME,Public Joint Stock Company Saratov Oil Refinery,,MCX,RUB,Common Stock,RU0009100408,,,,,,,,,,
-88,KRKNP.ME,Public Joint Stock Company Saratov Oil Refinery,,MCX,RUB,Common Stock,,,,,,,,,,,
-89,KRKOP.ME,Public Joint Stock Company The Taganrog Boiler-Making Works Krasny Kotelshchik,,MCX,RUB,Common Stock,,,,,,,,,,,
-90,KROT.ME,Public Joint-Stock Company Krasnyj Octyabr,,MCX,RUB,Common Stock,RU0008913850,,,,,,,,,,
-91,KROTP.ME,Joint-Stock Company Krasnyj Octyabr RUB1 PRF(RUB),,MCX,RUB,Common Stock,,,,,,,,,,,
-92,KRSB.ME,Public Joint Stock Company Krasnoyarskenergosbyt,,MCX,RUB,Common Stock,RU000A0HMLY1,,,,,,,,,,
-93,KRSBP.ME,Public Joint Stock Company Krasnoyarskenergosbyt,,MCX,RUB,Common Stock,,,,,,,,,,,
-94,KTSB.ME,"Publichnoe Akcionernoe Obshestvo ""Kostromskaya Sbytovaya Compania""",,MCX,RUB,Common Stock,RU000A0D8LW9,,,,,,,,,,
-95,KTSBP.ME,Public Joint Stock Company Kostroma Power Sale Company RUB0.04 PRF(USD),,MCX,RUB,Common Stock,,,,,,,,,,,
-96,KUBE.ME,Rosseti Kuban PJSC,,MCX,RUB,Common Stock,RU0009046767,,,,,,,,,,
-97,KUZB.ME,Kuznetsky Bank Public joint stock company,,MCX,RUB,Common Stock,RU000A0JSQ66,,,,,,,,,,
-98,KZOS.ME,Kazan Public Joint Stock Company Organichesky sintez,,MCX,RUB,Common Stock,RU0009089825,,,,,,,,,,
-99,KZOSP.ME,Kazan Public Joint Stock Company Organichesky sintez,,MCX,RUB,Common Stock,,,,,,,,,,,
-100,LIFE.ME,"Public Joint-Stock Company ""Pharmsynthez""",,MCX,RUB,Common Stock,RU000A0JR514,,,,,,,,,,
-101,LKOH.ME,PJSC LUKOIL,,MCX,RUB,Common Stock,RU0009024277,,,,,,,,,,
-102,LNTA.ME,Lenta PLC,,MCX,RUB,Common Stock,,,,,,,,,,,
-103,LNZL.ME,Lena Gold-Mining Public Joint Stock Company Lenzoloto,,MCX,RUB,Common Stock,RU000A0JP1N2,,,,,,,,,,
-104,LNZLP.ME,Lena Gold-Mining Public Joint Stock Company Lenzoloto,,MCX,RUB,Common Stock,,,,,,,,,,,
-105,LPSB.ME,Lipetsk Power Sale Company Open Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0D8MR7,,,,,,,,,,
-106,LSNG.ME,Public Joint stock company Rosseti Lenenergo,,MCX,RUB,Common Stock,RU0009034490,,,,,,,,,,
-107,LSNGP.ME,Public Joint stock company Rosseti Lenenergo,,MCX,RUB,Common Stock,,,,,,,,,,,
-108,LSRG.ME,PJSC LSR Group,,MCX,RUB,Common Stock,RU000A0JPFP0,,,,,,,,,,
-109,LVHK.ME,Levenhuk Inc,,MCX,RUB,Common Stock,RU000A0JT7Y2,,,,,,,,,,
-110,MAGE.ME,Public Joint Stock Company Magadanenergo,,MCX,RUB,Common Stock,RU0006758919,,,,,,,,,,
-111,MAGEP.ME,Public Joint Stock Company Magadanenergo,,MCX,RUB,Common Stock,,,,,,,,,,,
-112,MAGN.ME,Public Joint Stock Company Magnitogorsk Iron & Steel Works,,MCX,RUB,Common Stock,RU0009084396,,,,,,,,,,
-113,MAIL.ME,Mail.ru Group Limited,,MCX,RUB,Common Stock,,,,,,,,,,,
-114,MCXSM.ME,MOEX SMID,,MCX,RUB,INDEX,,,,,,,,,,,
-115,MDMG.ME,MD Medical Group Investments Plc,,MCX,RUB,Common Stock,,,,,,,,,,,
-116,MERF.ME,Public Joint-Stock Company First Real Estate Investment Fund Meridian,,MCX,RUB,Common Stock,RU000A0JQ128,,,,,,,,,,
-117,MFGS.ME,Joint-stock company Slavneft-Megionneftegas,,MCX,RUB,Common Stock,RU0009011126,,,,,,,,,,
-118,MFGSP.ME,Joint-stock company Slavneft-Megionneftegas,,MCX,RUB,Common Stock,,,,,,,,,,,
-119,MGNT.ME,Public Joint Stock Company Magnit,,MCX,RUB,Common Stock,RU000A0JKQU8,,,,,,,,,,
-120,MGNZ.ME,Open joint stock company Solikamsk magnesium works,,MCX,RUB,Common Stock,RU0009100911,,,,,,,,,,
-121,MGTS.ME,Public Joint Stock Company Moscow City Telephone Network,,MCX,RUB,Common Stock,RU0009036461,,,,,,,,,,
-122,MGTSP.ME,Public Joint Stock Company Moscow City Telephone Network,,MCX,RUB,Common Stock,,,,,,,,,,,
-123,MISB.ME,Public Joint-stock Company TNS energo Mari El,,MCX,RUB,Common Stock,RU000A0D8K33,,,,,,,,,,
-124,MISBP.ME,Public Joint-stock Company TNS energo Mari El RUB0.1 PRF(RUB),,MCX,RUB,Common Stock,,,,,,,,,,,
-125,MOEX.ME,Public Joint-Stock Company Moscow Exchange MICEX-RTS,,MCX,RUB,Common Stock,RU000A0JR4A1,,,,,,,,,,
-126,MOEX10.ME,MOEX 10 Index,,MCX,RUB,INDEX,,,,,,,,,,,
-127,MOEXBC.ME,MOEX Blue Chip,,MCX,RUB,INDEX,,,,,,,,,,,
-128,MOEXBMI.ME,MOEX Broad Market,,MCX,RUB,INDEX,,,,,,,,,,,
-129,MOEXCH.ME,MOEX Chemicals,,MCX,RUB,INDEX,,,,,,,,,,,
-130,MOEXCN.ME,MOEX Consumer,,MCX,RUB,INDEX,,,,,,,,,,,
-131,MOEXEU.ME,MOEX Electric Utilities,,MCX,RUB,INDEX,,,,,,,,,,,
-132,MOEXFN.ME,MOEX Financials Index,,MCX,RUB,INDEX,,,,,,,,,,,
-133,MOEXINN.ME,MOEX Innovations,,MCX,RUB,INDEX,,,,,,,,,,,
-134,MOEXMM.ME,MOEX Metals and Mining,,MCX,RUB,Common Stock,,,,,,,,,,,
-135,MOEXOG.ME,MOEX Oil and Gas,,MCX,RUB,Common Stock,,,,,,,,,,,
-136,MOEXTL.ME,MOEX Telecommunication Index,,MCX,RUB,INDEX,,,,,,,,,,,
-137,MOEXTN.ME,MOEX Transport,,MCX,RUB,INDEX,,,,,,,,,,,
-138,MRKC.ME,Interregional Distribution Grid Company of Centre Public Joint Stock Company,,MCX,RUB,Common Stock,RU000A0JPPL8,,,,,,,,,,
-139,MRKK.ME,"Public Joint Stock Company ""ROSSETI Northern Caucasus""",,MCX,RUB,Common Stock,RU000A0JPPQ7,,,,,,,,,,
-140,MRKP.ME,Interregional Distribution Grid Company of Center and Volga Region Public Joint Stock Company,,MCX,RUB,Common Stock,RU000A0JPN96,,,,,,,,,,
-141,MRKS.ME,Public Joint Stock Company Interregional Distribution Grid Company of Siberia,,MCX,RUB,Common Stock,RU000A0JPPF0,,,,,,,,,,
-142,MRKU.ME,Interregional Distribution Grid Company of Urals Joint Stock Company,,MCX,RUB,Common Stock,RU000A0JPPT1,,,,,,,,,,
-143,MRKV.ME,Public Joint Stock Company Rosseti Volga,,MCX,RUB,Common Stock,RU000A0JPPN4,,,,,,,,,,
-144,MRKY.ME,"Public Joint Stock Company ""ROSSETI South""",,MCX,RUB,Common Stock,RU000A0JPPG8,,,,,,,,,,
-145,MRKZ.ME,Public Joint-Stock Company Interregional Distribution Grid Company of the North-West,,MCX,RUB,Common Stock,RU000A0JPPB9,,,,,,,,,,
-146,MRSB.ME,Mordovia Energy Retail Company Public Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0D9AJ7,,,,,,,,,,
-147,MSNG.ME,Public Joint Stock Company Mosenergo,,MCX,RUB,Common Stock,RU0008958863,,,,,,,,,,
-148,MSRS.ME,"Public Joint-Stock Company ""Rosseti Moscow Region""",,MCX,RUB,Common Stock,RU000A0ET7Y7,,,,,,,,,,
-149,MSST.ME,Public Joint Stock Company Multisistema,,MCX,RUB,Common Stock,RU000A0JTFH9,,,,,,,,,,
-150,MSTT.ME,Public Joint Stock Company Mostotrest,,MCX,RUB,Common Stock,RU0009177331,,,,,,,,,,
-151,MTEK.ME,Freedom-Lidery tekhnologii BPIFRFI,,MCX,RUB,ETF,,,,,,,,,,,
-152,MTLR.ME,Mechel PAO,,MCX,RUB,Common Stock,RU000A0DKXV5,,,,,,,,,,
-153,MTLRP.ME,Mechel PAO,,MCX,RUB,Common Stock,,,,,,,,,,,
-154,MTSS.ME,Mobile TeleSystems Public Joint Stock Company,,MCX,RUB,Common Stock,RU0007775219,,,,,,,,,,
-155,MVID.ME,Public Joint Stock Company M.video,,MCX,RUB,Common Stock,RU000A0JPGA0,,,,,,,,,,
-156,NAUK.ME,Public joint stock company NPO Nauka,,MCX,RUB,Common Stock,RU000A0JRPX9,,,,,,,,,,
-157,NFAZ.ME,NEFAZ Publicly Traded Company,,MCX,RUB,Common Stock,RU0009115604,,,,,,,,,,
-158,NKHP.ME,Public Joint Stock Company Novorossyisk Grain Plant,,MCX,RUB,Common Stock,RU000A0BLWD7,,,,,,,,,,
-159,NKNC.ME,Public Joint Stock Company Nizhnekamskneftekhim,,MCX,RUB,Common Stock,RU0009100507,,,,,,,,,,
-160,NKNCP.ME,Public Joint Stock Company Nizhnekamskneftekhim,,MCX,RUB,Common Stock,,,,,,,,,,,
-161,NKSH.ME,PJSC Nizhnekamskshina,,MCX,RUB,Common Stock,RU0009100515,,,,,,,,,,
-162,NLMK.ME,"Public Joint Stock Company ""Novolipetsk Steel""",,MCX,RUB,Common Stock,RU0009046452,,,,,,,,,,
-163,NMTP.ME,Public Joint Stock Company Novorossiysk Commercial Sea Port,,MCX,RUB,Common Stock,RU0009084446,,,,,,,,,,
-164,NNSB.ME,Public Joint-Stock Company TNS energo Nizhny Novgorod,,MCX,RUB,Common Stock,RU000A0ET5A1,,,,,,,,,,
-165,NNSBP.ME,Public Joint-Stock Company TNS energo Nizhny Novgorod,,MCX,RUB,Common Stock,,,,,,,,,,,
-166,NSVZ.ME,Public Joint Stock Company Nauka-Telecom,,MCX,RUB,Common Stock,RU000A0JQLB6,,,,,,,,,,
-167,NVTK.ME,PAO NOVATEK,,MCX,RUB,Common Stock,RU000A0DKVS5,,,,,,,,,,
-168,ODVA.ME,Public Joint-Stock Company Mediaholding,,MCX,RUB,Common Stock,RU000A0JPWV3,,,,,,,,,,
-169,OGKB.ME,"Public Joint-Stock Company ""Second Generating Company of the Electric Power Wholesale Market""",,MCX,RUB,Common Stock,RU000A0JNG55,,,,,,,,,,
-170,OMZZP.ME,Open Joint Stock Company OMZ,,MCX,RUB,Common Stock,,,,,,,,,,,
-171,OPNW.ME,ETF OPNW Open All-Weather,,MCX,RUB,ETF,,,,,,,,,,,
-172,ORUP.ME,Public Joint-Stock Company OR,,MCX,RUB,Common Stock,RU000A0JXKG3,,,,,,,,,,
-173,OZON.ME,Ozon Holdings PLC,,MCX,RUB,Common Stock,,,,,,,,,,,
-174,PAZA.ME,Public Joint Stock Company Pavlovo Bus,,MCX,RUB,Common Stock,RU0009083240,,,,,,,,,,
-175,PHOR.ME,Public Joint-Stock Company PhosAgro,,MCX,RUB,Common Stock,RU000A0JRKT8,,,,,,,,,,
-176,PIKK.ME,Public Joint Stock Company PIK-specialized homebuilder,,MCX,RUB,Common Stock,RU000A0JP7J7,,,,,,,,,,
-177,PLZL.ME,Public Joint Stock Company Polyus,,MCX,RUB,Common Stock,RU000A0JNAA8,,,,,,,,,,
-178,PMSB.ME,Public Joint Stock Company Perm Energy Supplying Company,,MCX,RUB,Common Stock,RU000A0ET123,,,,,,,,,,
-179,PMSBP.ME,Public Joint Stock Company Perm Energy Supplying Company,,MCX,RUB,Common Stock,,,,,,,,,,,
-180,POGR.ME,Petropavlovsk PLC,,MCX,RUB,Common Stock,GB0031544546,,,,,,,,,,
-181,POLY.ME,Polymetal International plc,,MCX,RUB,Common Stock,JE00B6T5S470,,,,,,,,,,
-182,PRFN.ME,"Public joint stock company ""Chelyabinsk plant of the profiled steel decking""",,MCX,RUB,Common Stock,RU000A0JNXF9,,,,,,,,,,
-183,PRMB.ME,Public joint-stock commercial bank Primorye,,MCX,RUB,Common Stock,RU000A0DPNQ5,,,,,,,,,,
-184,QIWI.ME,QIWI plc,,MCX,RUB,Common Stock,,,,,,,,,,,
-185,RASP.ME,Public Joint Stock Company Raspadskaya,,MCX,RUB,Common Stock,RU000A0B90N8,,,,,,,,,,
-186,RAVN.ME,Raven Property Group Limited,,MCX,RUB,Common Stock,GB00B0D5V538,,,,,,,,,,
-187,RBCM.ME,Public Joint Stock Company RBC,,MCX,RUB,Common Stock,RU000A0JR6A6,,,,,,,,,,
-188,RCMB.ME,OOO Raiffeisen Capital Asset Management Company units of the exchange traded fund,,MCX,RUB,ETF,,,,,,,,,,,
-189,RDRB.ME,The Russian Public Joint-Stock Commercial Roads Bank (Public joint-stock company),,MCX,RUB,Common Stock,RU000A0JU6Q7,,,,,,,,,,
-190,RGSS.ME,Rosgosstrakh Insurance Company (Public Joint Stock Company),,MCX,RUB,Common Stock,RU0008010855,,,,,,,,,,
-191,RKKE.ME,S.P. Korolev Rocket and Space Public Corporation Energia Open Joint Stock Company,,MCX,RUB,Common Stock,RU0009095939,,,,,,,,,,
-192,RLMN.ME,"Public Joint Stock Company ""Rollman Group""",,MCX,RUB,Common Stock,RU000A0JTAP3,,,,,,,,,,
-193,RLMNP.ME,"Public Joint Stock Company ""Rollman Group""",,MCX,RUB,Common Stock,,,,,,,,,,,
-194,RNFT.ME,Public Joint Stock Company RussNeft,,MCX,RUB,Common Stock,RU000A0JSE60,,,,,,,,,,
-195,ROLO.ME,Public Joint Stock Company Rusolovo,,MCX,RUB,Common Stock,RU000A0JU1B0,,,,,,,,,,
-196,ROSB.ME,Public joint stock company ROSBANK,,MCX,RUB,Common Stock,RU000A0HHK26,,,,,,,,,,
-197,ROSN.ME,Public Joint Stock Company Rosneft Oil Company,,MCX,RUB,Common Stock,RU000A0J2Q06,,,,,,,,,,
-198,ROST.ME,Public Joint Stock Company Rosinter Restaurants Holding,,MCX,RUB,Common Stock,RU000A0JP922,,,,,,,,,,
-199,RSTI.ME,Rosseti Public Joint Stock Company,,MCX,RUB,Common Stock,RU000A0JPVJ0,,,,,,,,,,
-200,RSTIP.ME,Rosseti Public Joint Stock Company,,MCX,RUB,Common Stock,,,,,,,,,,,
-201,RTGZ.ME,Public Joint Stock Company Gazprom Gazoraspredelenie Rostov-na-Donu,,MCX,RUB,Common Stock,RU000A0JPG04,,,,,,,,,,
-202,RTKM.ME,Public Joint Stock Company Rostelecom,,MCX,RUB,Common Stock,RU0008943394,,,,,,,,,,
-203,RTKMP.ME,Public Joint Stock Company Rostelecom,,MCX,RUB,Common Stock,,,,,,,,,,,
-204,RTSB.ME,"Public Joint Stock Company ""TNS energo Rostov-on-Don""",,MCX,RUB,Common Stock,RU000A0D8PB4,,,,,,,,,,
-205,RTSBP.ME,"Public Joint Stock Company ""TNS energo Rostov-on-Don""",,MCX,RUB,Common Stock,,,,,,,,,,,
-206,RTSCH.ME,RTS Chemicals Index,,MCX,USD,INDEX,,,,,,,,,,,
-207,RTSEU.ME,RTS Electric Utilities Index,,MCX,USD,INDEX,,,,,,,,,,,
-208,RTSMM.ME,RTS Metals & Mining,,MCX,USD,INDEX,,,,,,,,,,,
-209,RTSOG.ME,RTS Oil and Gas Index,,MCX,USD,INDEX,,,,,,,,,,,
-210,RTSTL.ME,RTS Telecom Index,,MCX,USD,INDEX,,,,,,,,,,,
-211,RUAL.ME,United Company RUSAL International Public Joint-Stock Company,,MCX,RUB,Common Stock,RU000A1025V3,,,,,,,,,,
-212,RUGBITR10Y.ME,Moscow Exchange Government Bond Index 10Y TR,,MCX,RUB,INDEX,,,,,,,,,,,
-213,RUGBITR3Y.ME,Moscow Exchange Government Bond Index 3Y TR,,MCX,RUB,INDEX,,,,,,,,,,,
-214,RUGBITR5Y.ME,Moscow Exchange Government Bond Index 5Y TR,,MCX,RUB,INDEX,,,,,,,,,,,
-215,RUGR.ME,Public Joint-Stock Company Rusgrain Holding,,MCX,RUB,Common Stock,RU000A0JPNP4,,,,,,,,,,
-216,RUSB.ME,ITI Funds UCITS ETF SICAV - ITI Funds Russia-Focused USD Eurobond Ucits ETF,,MCX,RUB,ETF,LU1483649825,,,,,,,,,,
-217,RUSE.ME,ITI Funds UCITS ETF SICAV - RTS Equity Fund,,MCX,RUB,ETF,LU1483649312,,,,,,,,,,
-218,RUSI.ME,Public Joint-Stock Company Investment Company IC Russ-Invest,,MCX,RUB,Common Stock,RU000A0JQ9W5,,,,,,,,,,
-219,RZSB.ME,Joint-Stock Company Ryazanenergosbyt,,MCX,RUB,Common Stock,RU000A0D9AF5,,,,,,,,,,
-220,SAGO.ME,Public Joint-Stock Energy and Electrification Company Samaraenergo,,MCX,RUB,Common Stock,RU0009098255,,,,,,,,,,
-221,SAGOP.ME,Public Joint-Stock Energy and Electrification Company Samaraenergo RUB0.01 PRF(USD),,MCX,RUB,Common Stock,,,,,,,,,,,
-222,SARE.ME,Public Joint Stock Company Saratovenergo,,MCX,RUB,Common Stock,RU0009100754,,,,,,,,,,
-223,SAREP.ME,Public Joint Stock Company Saratovenergo,,MCX,RUB,Common Stock,,,,,,,,,,,
-224,SBCB.ME,SBCB,,MCX,RUB,ETF,RU000A1000Q6,,,,,,,,,,
-225,SBER.ME,Sberbank of Russia,,MCX,RUB,Common Stock,RU0009029540,,,,,,,,,,
-226,SBERP.ME,Sberbank of Russia,,MCX,RUB,Common Stock,RU0009029557,,,,,,,,,,
-227,SBGB.ME,Sberbank MOEX Government Bond I,,MCX,RUB,ETF,RU000A1000F9,,,,,,,,,,
-228,SBMX.ME,Sberbank - MOEX Russia Total Re,,MCX,RUB,ETF,RU000A0ZZH92,,,,,,,,,,
-229,SBRB.ME,iNAV Sberbank MOEX Corporate Bo,,MCX,RUB,ETF,RU000A100P44,,,,,,,,,,
-230,SBRI.ME,Sber-Otvetstvennye investitsii BPIRFI,,MCX,RUB,ETF,,,,,,,,,,,
-231,SBSP.ME,SBSP,,MCX,RUB,Common Stock,RU000A1006W1,,,,,,,,,,
-232,SELG.ME,Public Joint-Stock Company Seligdar,,MCX,RUB,Common Stock,RU000A0JPR50,,,,,,,,,,
-233,SELGP.ME,Public Joint-Stock Company Seligdar,,MCX,RUB,Common Stock,,,,,,,,,,,
-234,SFIN.ME,"Public Joint Stock Company ""SAFMAR Financial investments""",,MCX,RUB,Common Stock,RU000A0JVW89,,,,,,,,,,
-235,SGZH.ME,Group of Companies Segezha Public Joint Stock Company,,MCX,RUB,Common Stock,RU000A102XG9,,,,,,,,,,
-236,SIBG.ME,SIBIRSKIY GOSTINETS Public Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0JVA36,,,,,,,,,,
-237,SIBN.ME,Public Joint Stock Company Gazprom Neft,,MCX,RUB,Common Stock,RU0009062467,,,,,,,,,,
-238,SLEN.ME,"Public Joint Stock Company ""Sakhalinenergo""",,MCX,RUB,Common Stock,RU0009280465,,,,,,,,,,
-239,SMLT.ME,Samolet Group Public Joint Stock Company,,MCX,RUB,Common Stock,RU000A0ZZG02,,,,,,,,,,
-240,SNGS.ME,Surgutneftegas Public Joint Stock Company,,MCX,RUB,Common Stock,RU0008926258,,,,,,,,,,
-241,SNGSP.ME,Surgutneftegas Public Joint Stock Company,,MCX,RUB,Common Stock,RU0009029524,,,,,,,,,,
-242,STSB.ME,Stavropolenergosbyt Public Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0ET1W4,,,,,,,,,,
-243,STSBP.ME,Stavropolenergosbyt Public Joint-Stock Company,,MCX,RUB,Common Stock,,,,,,,,,,,
-244,SUGB.ME,MKB Investments Asset Management JSC units of the exchange traded fund,,MCX,RUB,ETF,,,,,,,,,,,
-245,SVAV.ME,Sollers Public Joint Stock Company,,MCX,RUB,Common Stock,RU0006914488,,,,,,,,,,
-246,TASB.ME,Public Joint Stock Company Tambov power supply company,,MCX,RUB,Common Stock,RU000A0D8NG8,,,,,,,,,,
-247,TASBP.ME,Public Joint Stock Company Tambov Power Supply Company RUB0.02 PRF(USD),,MCX,RUB,Common Stock,,,,,,,,,,,
-248,TATN.ME,PJSC Tatneft,,MCX,RUB,Common Stock,RU0009033591,,,,,,,,,,
-249,TATNP.ME,PJSC Tatneft,,MCX,RUB,Common Stock,RU0006944147,,,,,,,,,,
-250,TBIO.ME,Tinkoff Nasdaq Biotekhnologii BPIFRFI,,MCX,RUB,ETF,,,,,,,,,,,
-251,TCSG.ME,TCS Group Holding PLC,,MCX,RUB,Common Stock,,,,,,,,,,,
-252,TECH.ME,Tinkoff Nasdaq Tekhnologii BPIFRFI,,MCX,RUB,ETF,,,,,,,,,,,
-253,TEUR.ME,TEUR,,MCX,RUB,ETF,RU000A1011T7,,,,,,,,,,
-254,TGKA.ME,Public Joint Stock Company Territorial Generating Company No. 1,,MCX,RUB,Common Stock,RU000A0JNUD0,,,,,,,,,,
-255,TGKB.ME,Public Joint-Stock Company Territorial Generation Company No.2,,MCX,RUB,Common Stock,RU000A0JNGS7,,,,,,,,,,
-256,TGKBP.ME,Public Joint-Stock Company Territorial Generation Company No.2,,MCX,RUB,Common Stock,,,,,,,,,,,
-257,TGKD.ME,"Public Joint Stock Company ""Quadra - Power Generation""",,MCX,RUB,Common Stock,RU000A0JNMZ0,,,,,,,,,,
-258,TGKDP.ME,"Public Joint Stock Company ""Quadra - Power Generation""",,MCX,RUB,Common Stock,,,,,,,,,,,
-259,TGKN.ME,Public Joint Stock Company Territorial Generation Company No. 14,,MCX,RUB,Common Stock,RU000A0H1ES3,,,,,,,,,,
-260,TGLD.ME,TGLD,,MCX,RUB,ETF,,,,,,,,,,,
-261,TIPO.ME,Tinkoff Index IPO ETF,,MCX,RUB,ETF,,,,,,,,,,,
-262,TMOS.ME,Tinkoff Indeks Mosbirzhi BPIFRFI,,MCX,RUB,ETF,,,,,,,,,,,
-263,TNSE.ME,Public Joint Stock Company Group of Companies TNS energo,,MCX,RUB,Common Stock,RU000A0JUCQ5,,,,,,,,,,
-264,TORS.ME,public-stock company Tomsk distribution company,,MCX,RUB,Common Stock,RU000A0ETZF2,,,,,,,,,,
-265,TORSP.ME,public-stock company Tomsk distribution company,,MCX,RUB,Common Stock,,,,,,,,,,,
-266,TRMK.ME,PAO TMK,,MCX,RUB,Common Stock,RU000A0B6NK6,,,,,,,,,,
-267,TRNFP.ME,Public Joint Stock Company Transneft,,MCX,RUB,Common Stock,RU0009091573,,,,,,,,,,
-268,TRUR.ME,TRUR,,MCX,RUB,ETF,RU000A1011U5,,,,,,,,,,
-269,TSPX.ME,Thinkoff S&P 500 ETF,,MCX,RUB,ETF,,,,,,,,,,,
-270,TTLK.ME,Tattelecom Public Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0HM5C1,,,,,,,,,,
-271,TUCH.ME,Tuchkovskiy complex of construction materials,,MCX,RUB,Common Stock,RU000A0JR4D5,,,,,,,,,,
-272,TUSD.ME,Tinkoff Capital units of the exchange traded fund,,MCX,RUB,ETF,,,,,,,,,,,
-273,TUZA.ME,Tuimazinskiy Zavod Avtobetonovozov Publicly Traded Company,,MCX,RUB,Common Stock,RU000A0HL7A2,,,,,,,,,,
-274,UCSS.ME,Public Joint Stock Company United Credit Systems,,MCX,RUB,Common Stock,RU000A0JTQK0,,,,,,,,,,
-275,UKUZ.ME,Southern Kuzbass Coal company Public joint-stock company,,MCX,RUB,Common Stock,RU0005294775,,,,,,,,,,
-276,UNAC.ME,Public Joint Stock Company United Aircraft Corporation,,MCX,RUB,Common Stock,RU000A0JPLZ7,,,,,,,,,,
-277,UNKL.ME,Southern Urals Nickel Plant PJSC,,MCX,RUB,Common Stock,RU0004887991,,,,,,,,,,
-278,UPRO.ME,Public Joint-Stock Company Unipro,,MCX,RUB,Common Stock,RU000A0JNGA5,,,,,,,,,,
-279,URKZ.ME,Urals Stampings Plant PAO,,MCX,RUB,Common Stock,RU000A0JPFY2,,,,,,,,,,
-280,USBN.ME,Public joint stock company BANK URALSIB,,MCX,RUB,Common Stock,RU0006929536,,,,,,,,,,
-281,UTAR.ME,Public Joint-Stock Company UTair Aviation,,MCX,RUB,Common Stock,RU0007661385,,,,,,,,,,
-282,UWGN.ME,Public Joint Stock Company Research and Production Corporation United Wagon Company,,MCX,RUB,Common Stock,RU000A0JVBT9,,,,,,,,,,
-283,VGSB.ME,Volgogradenergosbyt Public Joint-Stock Company,,MCX,RUB,Common Stock,RU000A0D8L73,,,,,,,,,,
-284,VGSBP.ME,Volgogradenergosbyt Public Joint-Stock Company RUB0.12 PRF(RUB),,MCX,RUB,Common Stock,,,,,,,,,,,
-285,VJGZ.ME,Public Joint Stock Company Varyoganneftegaz,,MCX,RUB,Common Stock,RU0009046460,,,,,,,,,,
-286,VJGZP.ME,Public Joint Stock Company Varyoganneftegaz,,MCX,RUB,Common Stock,,,,,,,,,,,
-287,VLHZ.ME,Public Joint Stock Company Vladimir Chemical Plant,,MCX,RUB,Common Stock,RU0007984761,,,,,,,,,,
-288,VRSB.ME,"Public Joint-stock Company ""TNS energo Voronezh""",,MCX,RUB,Common Stock,RU000A0DPG67,,,,,,,,,,
-289,VRSBP.ME,Public Joint Stock Company TNS energo Voronezh RUB0.4 PRF(RUB),,MCX,RUB,Common Stock,,,,,,,,,,,
-290,VSMO.ME,public stock company VSMPO-AVISMA Corporation,,MCX,RUB,Common Stock,RU0009100291,,,,,,,,,,
-291,VSYD.ME,Public joint-stock company Vyborg Shipyard,,MCX,RUB,Common Stock,RU0006334372,,,,,,,,,,
-292,VSYDP.ME,Public joint-stock company Vyborg Shipyard,,MCX,RUB,Common Stock,,3.0,,,,,,,,,
-293,VTBA.ME,VTBA,,MCX,RUB,ETF,RU000A100E21,,,,,,,,,,
-294,VTBB.ME,VTBB,,MCX,RUB,ETF,RU000A1002S8,,,,,,,,,,
-295,VTBE.ME,VTBE ETF Emerging market Equit,,MCX,RUB,ETF,RU000A100HQ5,,,,,,,,,,
-296,VTBH.ME,VTBH ETF US High Yield Bond iNA,,MCX,RUB,ETF,RU000A100HP7,,,,,,,,,,
-297,VTBM.ME,VTBM,,MCX,RUB,ETF,RU000A1014L8,,,,,,,,,,
-298,VTBR.ME,VTB Bank (public joint-stock company),,MCX,RUB,Common Stock,RU000A0JP5V6,4.0,,,,,,,,,
-299,VTBU.ME,VTB-Korporativnye ross evroob smart beta BPIFRFI,,MCX,RUB,ETF,,,,,,,,,,,
-300,VTBX.ME,VTB-Indeks Mosbirzhi BPIFRFI,,MCX,RUB,ETF,RU000A101EJ5,,,,,,,,,,
-301,VTBY.ME,VTB-Yevroobligatsii v evro smart beta BPIFRFI,,MCX,RUB,ETF,,,,,,,,,,,
-302,WTCM.ME,"Joint Stock Company ""World Trade Center Moscow""",Russia,MCX,RUB,Common Stock,RU0008137070,,,Real Estate Services,Real Estate,0.20270969,10249820160.0,9.588,9.990922,-0.0255,0.52913
-303,WTCMP.ME,"Joint Stock Company ""World Trade Center Moscow"" RUB1 PRF(USD)",,MCX,RUB,Common Stock,,,,,,,8013200896.0,8.913143,9.189787,,
-304,YAKG.ME,Public Joint Stock Company Yakutsk Fuel and Energy Company,Russia,MCX,RUB,Common Stock,RU0007796819,,,Oil & Gas Integrated,Energy,6.9214363,80500563968.0,96.32429,102.4656,0.28221,0.65108
-305,YKEN.ME,Public joint stock company Yakutskenergo,Russia,MCX,RUB,Common Stock,RU0009257075,,,Utilities—Regulated Electric,Utilities,0.17121144,3488796672.0,0.39484286,0.41724822,-0.09649,-0.107159995
-306,YKENP.ME,Public joint stock company Yakutskenergo,Russia,MCX,RUB,Common Stock,,,,Utilities—Regulated Electric,Utilities,0.15489495,3647120384.0,0.34791428,0.36191136,-0.09649,-0.107159995
-307,YNDX.ME,Yandex N.V,Netherlands,MCX,RUB,Common Stock,NL0009805522,6.0,,Internet Content & Information,Communication Services,5.5367556,1850982531072.0,5098.509,4958.661,0.05716,0.54511
-308,YRSB.ME,Public Joint Stock Company TNS Energo Yaroslavl,Russia,MCX,RUB,Common Stock,RU000A0D8760,,,Utilities—Regulated Electric,Utilities,6.558784,4057761024.0,207.77142,219.64539,0.00198,0.45103002
-309,YRSBP.ME,Public Joint Stock Company TNS Energo Yaroslavl RUB1 PRF(USD),,MCX,RUB,Common Stock,,,,,,,1585783040.0,91.22857,91.96099,,
-310,ZILL.ME,Public Joint-Stock Company The Likhachov Plant,Russia,MCX,RUB,Common Stock,RU0009086193,,,Farm & Heavy Construction Machinery,Industrials,0.44604325,11451127808.0,4145.143,3744.0781,412.6978,-0.16431999
-311,ZVEZ.ME,Public Joint Stock Company Zvezda,Russia,MCX,RUB,Common Stock,RU0009091300,,,Auto Parts,Consumer Cyclical,2.857143,2281800960.0,4.018429,4.186312,-0.42657003,-0.35264
+,Code,Name,Country,Exchange,Currency,Type,Isin,F-Score,PEG-Ratio,Industry,Sector,Price to Book,Market Cap,50 Day Av,200 Day Av,Profit Margin,Gross Margin
+0,ABRD.ME,Public Joint Stock Company Abrau-Durso,Russia,MCX,RUB,Common Stock,RU000A0JS5T7,5,,Beverages—Wineries & Distilleries,Consumer Defensive,1.8727677,19012038656.0,194.75714,203.44014,0.12667,0.41015
+1,ACKO.ME,Public joint-stock company Asko-Strakhovanie,Russia,MCX,RUB,Common Stock,RU000A0JXS91,6,,Insurance—Diversified,Financial Services,1.6681403,3033760000.0,5.7,5.7,0.00989,0.12794
+2,AFKS.ME,Sistema Public Joint Stock Financial Corporation,Russia,MCX,RUB,Common Stock,RU000A0DQZE3,7,,Telecom Services,Communication Services,4.3188386,295518633984.0,29.710571,32.61843,0.01859,0.51625
+3,AFLT.ME,Public Joint Stock Company Aeroflot - Russian Airlines,Russia,MCX,RUB,Common Stock,RU0009062285,3,,Airlines,Industrials,,164990205952.0,67.559425,68.28324,-0.26037002,0.15015
+4,AGRO.ME,Ros Agro PLC,Russia,MCX,RUB,Common Stock,US7496552057,7,,Farm Products,Consumer Defensive,1.2350578,167708524544.0,1117.8,984.56195,0.16856001,0.27859
+9,AKRN.ME,Public Joint Stock Company Acron,Russia,MCX,RUB,Common Stock,RU0009028674,5,,Agricultural Inputs,Basic Materials,3.7346635,258151464960.0,6118.7427,6054.817,0.22705999,0.55596
+11,ALBK.ME,Public Joint Stock Company Best Efforts Bank,Russia,MCX,RUB,Common Stock,RU000A0JS2M9,6,,Banks—Regional,Financial Services,7.0549383,7965089792.0,108.185715,73.51057,0.375,0.0
+12,ALNU.ME,PJSC ALROSA-Nyurba,Russia,MCX,RUB,Common Stock,RU000A0JP468,,,Other Precious Metals & Mining,Basic Materials,0.8877723,52320002048.0,65348.57,63960.562,0.54597,0.64247
+13,ALRS.ME,Public Joint Stock Company ALROSA,Russia,MCX,RUB,Common Stock,RU0007252813,5,,Other Precious Metals & Mining,Basic Materials,4.2301583,1056796049408.0,134.92485,119.92176,0.26816,0.48901
+14,AMEZ.ME,"Public Joint Stock Company ""Ashinskiy metallurgical works""",Russia,MCX,RUB,Common Stock,RU000A0B88G6,6,,Steel,Basic Materials,0.74857527,8834736128.0,16.544714,11.641866,0.10342,0.23658001
+15,APTK.ME,Public Joint-Stock Company Pharmacy Chain 36.6,Russia,MCX,RUB,Common Stock,RU0008081765,4,,Pharmaceutical Retailers,Healthcare,,103148150784.0,13.544515,13.661789,0.16174,0.34143
+16,AQUA.ME,PJSC Russian Aquaculture,Russia,MCX,RUB,Common Stock,RU000A0JQTS3,5,,Farm Products,Consumer Defensive,3.3593547,39717597184.0,461.3,341.7993,0.3734,0.42179
+17,ARSA.ME,Arsagera Asset Management,Russia,MCX,RUB,Common Stock,RU000A0JP0Q7,,,Asset Management,Financial Services,3.7242026,983107008.0,7.2642856,5.6127467,0.50706,0.7408
+18,ASSB.ME,Astrakhan Power Sale Company Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0D8MM8,,,Utilities—Regulated Electric,Utilities,4.8197675,634605312.0,0.82388574,0.93307745,0.01036,0.51463
+19,AVAN.ME,AVANGARD Joint Stock BANK,Russia,MCX,RUB,Common Stock,RU000A0DM7B3,4,,Banks—Regional,Financial Services,3.7612193,94015496192.0,1185.1428,1137.2183,0.27942,0.0
+20,BANE.ME,Public Joint Stock Oil Company Bashneft,Russia,MCX,RUB,Common Stock,RU0007976957,4,,Oil & Gas Integrated,Energy,0.4936142,236887015424.0,1421.3857,1535.324,0.04526,0.56206
+21,BANEP.ME,Public Joint Stock Oil Company Bashneft,Russia,MCX,RUB,Common Stock,,4,,Oil & Gas Integrated,Energy,0.37634674,239013789696.0,1037.2,1150.9366,0.04526,0.56206
+22,BELU.ME,Beluga Group Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0HL5M1,8,,Beverages—Wineries & Distilleries,Consumer Defensive,1.6437116,40371384320.0,3003.0857,3167.7747,0.046129998,0.35724998
+23,BISVP.ME,Public Joint-Stock Company Bashinformsvyaz RUB1 PRF'A'(USD),Russia,MCX,RUB,Common Stock,,6,,,,,8398862848.0,8.278857,9.137183,,
+24,BLNG.ME,Belon Joint Stock Company,Russia,MCX,RUB,Common Stock,RU000A0J2QG8,,,Thermal Coal,Energy,2.2167056,13092750336.0,7.5604286,6.901718,62.04253,0.87516
+25,BRZL.ME,Public Joint Stock Company Buryatzoloto,Russia,MCX,RUB,Common Stock,RU0009288658,,,Gold,Basic Materials,0.47780952,8685705216.0,1122.6285,1153.1691,0.4012,0.5209
+26,BSPB.ME,"""Bank ""Saint-Petersburg"" Public Joint-Stock Company",Russia,MCX,RUB,Common Stock,RU0009100945,5,,Banks—Regional,Financial Services,0.37918612,35538149376.0,68.962,65.977745,0.42238998,0
+27,CBOM.ME,Credit Bank of Moscow (public joint-stock company),Russia,MCX,RUB,Common Stock,RU000A0JUG31,6,,Banks—Regional,Financial Services,0.92201173,235946835968.0,6.758257,6.746958,0.50201,0
+28,CHEP.ME,"Public Joint Stock Company ""Chelyabinsk Pipe-Rolling Plant""",Russia,MCX,RUB,Common Stock,RU0009066807,5,,Metal Fabrication,Industrials,12.188968,95988547584.0,309.54285,304.919,0.04526,0.29286
+29,CHGZ.ME,Public Joint Stock Company RN-Western Siberia,Russia,MCX,RUB,Common Stock,RU0009082291,,,Oil & Gas E&P,Energy,0.38520804,1070856000.0,42.88,43.67183,0.28155002,0.03196
+30,CHKZ.ME,Chelyabinsk Forge-and-Press Plant Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU000A0JNST0,6,,Metal Fabrication,Industrials,1.9440117,3529270016.0,5736.5713,5843.8027,0.016239999,0.18933001
+31,CHMF.ME,Public Joint Stock Company Severstal,Russia,MCX,RUB,Common Stock,RU0009046510,6,,Steel,Basic Materials,409.3857,1395807354880.0,1734.3485,1632.1816,0.22656,0.47789
+32,CHMK.ME,Chelyabinsk Metallurgical Plant PAO,Russia,MCX,RUB,Common Stock,RU0007665170,3,,Steel,Basic Materials,0.33229932,18170150912.0,4445.857,3911.7605,-0.0044400003,0.16678
+33,CNTL.ME,Central Telegraph Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU0007665147,,,Telecom Services,Communication Services,2.324967,2803947520.0,14.164,15.78507,0.21238,0.054619998
+34,CNTLP.ME,Central Telegraph Public Joint Stock Company,Russia,MCX,RUB,Common Stock,,,,Telecom Services,Communication Services,2.3431153,2538439424.0,10.374286,12.910563,0.21238,0.054619998
+35,DASB.ME,Dagestan Energy Supply Company Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0F63G0,,,Utilities—Regulated Electric,Utilities,,556945984.0,0.064294286,0.07451127,-0.672,0.58835
+36,DIOD.ME,DIOD Maker of Eco-Friendly Equipment and Nutrition Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU000A0JQWC1,6,,Drug Manufacturers—Specialty & Generic,Healthcare,0.6677417,833564992.0,8.522285,8.170211,0.072069995,0.62821
+38,DSKY.ME,Public Joint Stock Company Detsky Mir,Russia,MCX,RUB,Common Stock,RU000A0JSQ90,7,,Department Stores,Consumer Cyclical,,100497260544.0,138.20172,145.02986,0.05691,0.30364
+39,DVEC.ME,Public joint stock company FAR-EASTERN ENERGY COMPANY,Russia,MCX,RUB,Common Stock,RU000A0JP2W1,8,,Utilities—Regulated Electric,Utilities,0.7417218,13490052096.0,0.7838857,0.79665494,0.01016,0.51949
+40,DZRD.ME,DONSKOY FACTORY OF RADIOCOMPONENTS Open Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0JQW11,5,,Electronic Components,Technology,0.27508995,975309440.0,2177.0,2175.9155,0.12405,0.18674
+41,DZRDP.ME,DONSKOY FACTORY OF RADIOCOMPONENTS Open Joint-Stock Company,Russia,MCX,RUB,Common Stock,,5,,Electronic Components,Technology,0.21245787,937185984.0,1660.0,1743.3802,0.12405,0.18674
+42,EELT.ME,European Eltech Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU000A0JWW54,4,,Electrical Equipment & Parts,Industrials,4.420929,4587200000.0,7.517143,7.5314083,0.10408,0.23558001
+43,ELTZ.ME,Electrozink Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0B66V1,,,Other Industrial Metals & Mining,Basic Materials,1.6389623,286479232.0,175.84285,172.71127,-0.052950002,-0.01539
+44,ENPG.ME,En+ Group International public joint-stock company,Russia,MCX,RUB,Common Stock,RU000A100K72,5,,Aluminum,Basic Materials,,,737.82855,818.2007,0.06605,0.24604
+45,ENRU.ME,Public Joint-Stock Company Enel Russia,Russia,MCX,RUB,Common Stock,RU000A0F5UN3,3,,Utilities—Regulated Electric,Utilities,0.7631305,31042379776,0.83262855,0.8106979,0.06419,0.10326
+47,ETLN.ME,Etalon Group PLC,Russia,MCX,RUB,Common Stock,,5,,Real Estate—Development,Real Estate,0.7230474,36928741376,120.56343,121.98099,0.025880001,0.26907
+48,FEES.ME,Public Joint-Stock Company Federal Grid Company of Unified Energy System,Russia,MCX,RUB,Common Stock,RU000A0JPNN9,6,,Utilities—Regulated Electric,Utilities,0.26182055,253877665792,0.19899486,0.21323873,0.2464,0.75791
+49,FESH.ME,Far-Eastern Shipping Company PLC,Russia,MCX,RUB,Common Stock,RU0008992318,8,,Integrated Freight & Logistics,Industrials,19.688072,63333822464,17.964,15.304296,0.1291,0.32345
+50,FIVE.ME,X5 Retail Group N.V,Russia,MCX,RUB,Common Stock,US98387E2054,7,,Grocery Stores,Consumer Defensive,6.3859096,659596509184,2421.2285,2406.067,0.015859999,0.25207
+51,FLOT.ME,Sovcomflot Pao,Russia,MCX,RUB,Common Stock,RU000A0JXNU8,7,,Marine Shipping,Industrials,51.26248,,87.268,89.96099,0.16178,0.59529996
+67,GAZA.ME,Public Joint Stock Company GAZ,Russia,MCX,RUB,Common Stock,RU0009034268,7,,Auto Manufacturers,Consumer Cyclical,7.458567,8821449728,475.0,466.12677,0.019960001,0.17732
+68,GAZAP.ME,Public Joint Stock Company GAZ,Russia,MCX,RUB,Common Stock,,7,,Auto Manufacturers,Consumer Cyclical,5.638677,7020858368,389.55713,378.94717,0.019960001,0.17732
+69,GAZP.ME,Public Joint Stock Company Gazprom,Russia,MCX,RUB,Common Stock,RU0007661625,4,,Oil & Gas Integrated,Energy,0.5178326,7677058482176,291.54172,259.2505,0.10177,0.62738
+70,GCHE.ME,"Public Joint Stock Company ""Cherkizovo Group""",Russia,MCX,RUB,Common Stock,RU000A0JL4R1,8,,Packaged Foods,Consumer Defensive,1.6893902,120678178816,2430.2285,2317.081,0.11783,0.26319
+71,GEMA.ME,International Medical Center of Biomaterials Processing and Cryostorage Public Joint-stock company,Russia,MCX,RUB,Common Stock,RU000A100GC7,4,,Medical Care Facilities,Healthcare,6.9554896,,803.9143,699.3169,0.43793,0.90205
+72,GEMC.ME,United Medical Group CY PLC,Russia,MCX,RUB,Common Stock,,,,,,,,,,,
+73,GLTR.ME,Globaltrans Investment Plc,Russia,MCX,RUB,Common Stock,,5,,Railroads,Industrials,2.2253325,,,,0.15484999,0.31157
+74,GMKN.ME,Public Joint Stock Company Mining and Metallurgical Company Norilsk Nickel,Russia,MCX,RUB,Common Stock,RU0007288411,7,,Other Industrial Metals & Mining,Basic Materials,9709.348,3911816314880,24660.115,24992.254,0.21775,0.69373
+76,GRNT.ME,"Public Joint Stock Company ""City Innovative Technologies""",Russia,MCX,RUB,Common Stock,RU000A0JV532,4,,Real Estate—Development,Real Estate,0.29025513,358550240,0.3699857,0.4260669,0.02587,0.106879994
+77,GTLC.ME,"Joint-Stock Company "" Gas To Liquid """,Russia,MCX,RUB,Common Stock,RU000A0JTN19,4,,Oil & Gas E&P,Energy,0.0074753687,214689200,0.058857143,0.054732393,0,0
+78,GTRK.ME,Public Joint Stock Company Globaltruck Management,Russia,MCX,RUB,Common Stock,RU000A0ZYD22,6,,Trucking,Industrials,0.43404326,3484228096,35.782856,36.390846,0.00664,0.12952
+79,HHRU.ME,HeadHunter Group PLC,Russia,MCX,RUB,Common Stock,,7,,Staffing & Employment Services,Industrials,46.748108,,,,0.25011998,0.57499003
+80,HIMCP.ME,Khimprom Public Joint stock company,Russia,MCX,RUB,Common Stock,RU0009099006,8,,Chemicals,Basic Materials,1.521468,7844212224,8.094857,8.062746,0.06161,0.3058
+81,HYDR.ME,Public Joint-Stock Company Federal Hydro-Generating Company - RusHydro,Russia,MCX,RUB,Common Stock,RU000A0JPKH7,7,,Utilities—Renewable,Utilities,0.57390994,355360145408,0.81924284,0.8262211,0.09522,0.55002
+82,IDVP.ME,Public Joint Stock Company INVEST-DEVELOPMENT,Russia,MCX,RUB,Common Stock,RU000A0JV7V4,5,,Real Estate Services,Real Estate,140.6637,272257073152,60114.285,52661.973,0,0
+83,IGST.ME,Izhstal PAO,Russia,MCX,RUB,Common Stock,RU0002155292,4,,Steel,Basic Materials,,1119370624,984.6857,1043.662,-0.08514,0.081420004
+84,IGSTP.ME,Izhstal PAO,Russia,MCX,RUB,Common Stock,,4,,Steel,Basic Materials,,1191273344,1002.4286,997.9718,-0.1092,0.077199996
+85,INGR.ME,"Public Joint Stock Company ""INGRAD""",Russia,MCX,RUB,Common Stock,RU000A0DJ9B4,6,,Real Estate—Development,Real Estate,7.7826896,55136034816,1259.3715,1449.2324,0.0149300005,0.27075002
+86,IRAO.ME,Public Joint Stock Company Inter RAO UES,Russia,MCX,RUB,Common Stock,RU000A0JPNM1,6,,Utilities—Regulated Electric,Utilities,0.5470628,354759835648,4.404543,4.84581,0.07241,0.21495001
+87,IRGZ.ME,Irkutsk Public Joint Stock Company of Energetics and Electrification,Russia,MCX,RUB,Common Stock,RU0008960828,5,,Utilities—Regulated Electric,Utilities,0.30310977,55045484544,11.46,11.517887,0.011510001,0.23988001
+88,IRKT.ME,Irkut Corporation,Russia,MCX,RUB,Common Stock,RU0006752979,4,,Aerospace & Defense,Industrials,,75904450560,24.809143,25.143099,-0.57973,0.32819998
+89,ISKJ.ME,"Public Joint-Stock Company ""Human Stem Cells Institute""",Russia,MCX,RUB,Common Stock,RU000A0JNAB6,5,,Biotechnology,Healthcare,34.92278,6783749632,73.019714,45.507042,0.0672,0.63988996
+90,JNOS.ME,Public Joint Stock Company Slavneft-Yaroslavnefteorgsintez,Russia,MCX,RUB,Common Stock,RU0009100895,5,,Oil & Gas Refining & Marketing,Energy,0.34118077,23877044224,19.545713,19.13486,0.12023,0.53378
+91,JNOSP.ME,Public Joint Stock Company Slavneft-Yaroslavnefteorgsintez,Russia,MCX,RUB,Common Stock,,5,,Oil & Gas Refining & Marketing,Energy,0.22845,21681219584,13.718857,13.872112,0.12023,0.53378
+92,KAZT.ME,Public Joint Stock Company KuibyshevAzot,Russia,MCX,RUB,Common Stock,RU000A0B9BV2,5,,Chemicals,Basic Materials,2.2351387,72768946176,285.14856,235.26901,0.01353,0.22553
+93,KAZTP.ME,Public Joint Stock Company KuibyshevAzot,Russia,MCX,RUB,Common Stock,,5,,Chemicals,Basic Materials,2.2459626,73026723840,290.49713,235.5507,0.01353,0.22553
+94,KBSB.ME,"Public Joint Stock Company ""TNS energo Kuban""",Russia,MCX,RUB,Common Stock,RU000A0JNJ11,3,,Utilities—Regulated Electric,Utilities,,2205537024,126.3,129.1831,-0.00555,0.02606
+95,KCHE.ME,Public Joint Stock Company Kamchatskenergo,Russia,MCX,RUB,Common Stock,RU0006753498,9,,Utilities—Regulated Electric,Utilities,1.9484535,9274929152,0.1887,0.19673592,0.07295,0.49456
+96,KCHEP.ME,Public Joint Stock Company Kamchatskenergo,Russia,MCX,RUB,Common Stock,,9,,Utilities—Regulated Electric,Utilities,4.2886596,8716781568,0.43405715,0.4167183,0.07295,0.49456
+97,KGKC.ME,Public Joint Stock Company Kurgan Generation Company,Russia,MCX,RUB,Common Stock,RU000A0JP120,6,,Utilities—Independent Power Producers,Utilities,1.3036336,6620636160,47.82857,50.37183,0.04493,0.38074002
+98,KGKCP.ME,Public Joint Stock Company Kurgan Generation Company,Russia,MCX,RUB,Common Stock,,6,,Utilities—Independent Power Producers,Utilities,1.2367079,6182021632,47.68,51.433804,0.04493,0.38074002
+99,KLSB.ME,Kaluga Power Sale Company Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0DKZK3,7,,Utilities—Regulated Electric,Utilities,0.68741256,738108096,9.906,9.970493,0.00347,0.046729997
+100,KMAZ.ME,KAMAZ Publicly Traded Company,Russia,MCX,RUB,Common Stock,RU0008959580,8,,Farm & Heavy Construction Machinery,Industrials,1.6035596,78502535168,78.968575,71.51057,0.01518,0.13485
+101,KMEZ.ME,Kovrov Mechanical Plant Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU0006753613,,,Aerospace & Defense,Industrials,1.0745785,4272820992,1155.2285,1083.2394,0.113400005,0.46793997
+102,KOGK.ME,Korshynov Mining Plant Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU0002155359,,,Steel,Basic Materials,0.29338127,13456779264,51045.715,50574.65,0.24360001,0.44748002
+103,KRKN.ME,Public Joint Stock Company Saratov Oil Refinery,Russia,MCX,RUB,Common Stock,RU0009100408,,,Oil & Gas Refining & Marketing,Energy,0.25981402,9163147264,12562.857,13305.281,0.28663,0.4095
+104,KRKNP.ME,Public Joint Stock Company Saratov Oil Refinery,Russia,MCX,RUB,Common Stock,,,,Oil & Gas Refining & Marketing,Energy,0.32026055,6245662208,15128,15749.859,0.28663,0.4095
+105,KRKOP.ME,Public Joint Stock Company The Taganrog Boiler-Making Works Krasny Kotelshchik,Russia,MCX,RUB,Common Stock,,5,,Specialty Industrial Machinery,Industrials,4.8976984,6724177408,11.896143,12.2715845,0.15964,0.24110001
+106,KROT.ME,Public Joint-Stock Company Krasnyj Octyabr,Russia,MCX,RUB,Common Stock,RU0008913850,,,Confectioners,Consumer Defensive,0.48190123,4410568192,393.85715,430.99295,-0.01439,0.082559995
+107,KROTP.ME,Joint-Stock Company Krasnyj Octyabr RUB1 PRF(RUB),Russia,MCX,RUB,Common Stock,,8,,,,,3152412416,294.48572,321.29227,,
+108,KRSB.ME,Public Joint Stock Company Krasnoyarskenergosbyt,Russia,MCX,RUB,Common Stock,RU000A0HMLY1,,,Utilities—Regulated Electric,Utilities,2.385536,7045026816,9.126286,9.520141,0.02925,0.09839
+109,KRSBP.ME,Public Joint Stock Company Krasnoyarskenergosbyt,Russia,MCX,RUB,Common Stock,,,,Utilities—Regulated Electric,Utilities,2.4817898,7191576064,9.288571,9.682958,0.02925,0.09839
+110,KTSB.ME,"Publichnoe Akcionernoe Obshestvo ""Kostromskaya Sbytovaya Compania""",Russia,MCX,RUB,Common Stock,RU000A0D8LW9,,,Utilities—Regulated Electric,Utilities,0.98761606,596430528,0.636,0.6346338,0.00399,0.492
+111,KTSBP.ME,Public Joint Stock Company Kostroma Power Sale Company RUB0.04 PRF(USD),Russia,MCX,RUB,Common Stock,,,,,,,297197344,0.31407142,0.2922007,,
+112,KUBE.ME,Rosseti Kuban PJSC,Russia,MCX,RUB,Common Stock,RU0009046767,3,,Utilities—Regulated Electric,Utilities,0.67218834,22053961728,65.76,68.71479,-0.025020001,0.02
+113,KUZB.ME,Kuznetsky Bank Public joint stock company,Russia,MCX,RUB,Common Stock,RU000A0JSQ66,5,,Banks—Regional,Financial Services,0.8464286,533332960,0.023556286,0.022308733,0.14349,0
+114,KZOS.ME,Kazan Public Joint Stock Company Organichesky sintez,Russia,MCX,RUB,Common Stock,RU0009089825,,,Chemicals,Basic Materials,3.199563,214294347776,105.06571,93.032394,0.13396,0.25231
+115,KZOSP.ME,Kazan Public Joint Stock Company Organichesky sintez,Russia,MCX,RUB,Common Stock,,,,Chemicals,Basic Materials,0.85967785,158903894016,32.68343,28.875,0.13396,0.25231
+116,LIFE.ME,"Public Joint-Stock Company ""Pharmsynthez""",Russia,MCX,RUB,Common Stock,RU000A0JR514,2,,Biotechnology,Healthcare,1.3096261,1834662016,5.9814286,6.099331,0,0.04566
+117,LKOH.ME,PJSC LUKOIL,Russia,MCX,RUB,Common Stock,RU0009024277,6,,Oil & Gas Integrated,Energy,0.957826,4129339998208,6378.3286,6242.412,0.03823,0.29185
+118,LNTA.ME,Lenta PLC,Russia,MCX,RUB,Common Stock,,7,,Department Stores,Consumer Cyclical,1.1664732,110131978240,230.49142,242.2169,0.02851,0.21756001
+119,LNZL.ME,Lena Gold-Mining Public Joint Stock Company Lenzoloto,Russia,MCX,RUB,Common Stock,RU000A0JP1N2,5,,Gold,Basic Materials,0.7792497,15179596800,13616.857,18896.973,0,0
+120,LNZLP.ME,Lena Gold-Mining Public Joint Stock Company Lenzoloto,Russia,MCX,RUB,Common Stock,,5,,Gold,Basic Materials,0.15191938,13711631360,2691.4285,4242.887,0,0
+121,LPSB.ME,Lipetsk Power Sale Company Open Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0D8MR7,,,Utilities—Regulated Electric,Utilities,1.2266859,1329713152,8.491428,8.498943,-0.016590001,-0.01555
+122,LSNG.ME,Public Joint stock company Rosseti Lenenergo,Russia,MCX,RUB,Common Stock,RU0009034490,7,,Utilities—Regulated Electric,Utilities,0.38875103,71717396480,6.2305713,6.130634,0.13287,0.27748
+123,LSNGP.ME,Public Joint stock company Rosseti Lenenergo,Russia,MCX,RUB,Common Stock,,7,,Utilities—Regulated Electric,Utilities,10.424789,74036125696,167.07286,162.19577,0.13287,0.27748
+124,LSRG.ME,PJSC LSR Group,Russia,MCX,RUB,Common Stock,RU000A0JPFP0,6,,Real Estate—Development,Real Estate,4.227475,75365384192,768.56573,801.54504,0.10186,0.33095002
+125,LVHK.ME,Levenhuk Inc,Russia,MCX,RUB,Common Stock,RU000A0JT7Y2,4,,Scientific & Technical Instruments,Technology,0.79922146,695631616,12.505428,12.507676,0.052199997,0.44911
+126,MAGE.ME,Public Joint Stock Company Magadanenergo,Russia,MCX,RUB,Common Stock,RU0006758919,7,,Utilities—Regulated Electric,Utilities,2.289229,4300718080,7.8205714,8.928028,0.14212,0.55155
+127,MAGEP.ME,Public Joint Stock Company Magadanenergo,Russia,MCX,RUB,Common Stock,,7,,Utilities—Regulated Electric,Utilities,1.7791779,4896756736,6.07,6.4380283,0.14212,0.55155
+128,MAGN.ME,Public Joint Stock Company Magnitogorsk Iron & Steel Works,Russia,MCX,RUB,Common Stock,RU0009084396,5,,Steel,Basic Materials,178.52145,883719471104,69.069,63.147396,0.13814001,0.38472
+129,MAIL.ME,Mail.ru Group Limited,Russia,MCX,RUB,Common Stock,,3,,Software—Infrastructure,Technology,1.9429965,,,,-0.13417,0.42964
+131,MDMG.ME,MD Medical Group Investments Plc,Russia,MCX,RUB,Common Stock,,7,,Medical Care Facilities,Healthcare,3.3331292,,,,0.21933001,0.37633
+132,MERF.ME,Public Joint-Stock Company First Real Estate Investment Fund Meridian,Russia,MCX,RUB,Common Stock,RU000A0JQ128,,,,,,3999460352,14.295714,15.774296,0,0
+133,MFGS.ME,Joint-stock company Slavneft-Megionneftegas,Russia,MCX,RUB,Common Stock,RU0009011126,4,,Oil & Gas E&P,Energy,0.24979535,30687946752,298.47144,319.74295,-0.14254,0.4445
+134,MFGSP.ME,Joint-stock company Slavneft-Megionneftegas,Russia,MCX,RUB,Common Stock,,4,,Oil & Gas E&P,Energy,0.22671863,48998318080,271.94287,285.72888,-0.14254,0.4445
+135,MGNT.ME,Public Joint Stock Company Magnit,Russia,MCX,RUB,Common Stock,RU000A0JKQU8,7,,Discount Stores,Consumer Defensive,2.916777,533446230016,5430.3,5292.264,0.0253,0.23048
+136,MGNZ.ME,Open joint stock company Solikamsk magnesium works,Russia,MCX,RUB,Common Stock,RU0009100911,5,,Other Industrial Metals & Mining,Basic Materials,1.1157672,3879169280,9952.857,9588.592,0.02661,0.15479
+137,MGTS.ME,Public Joint Stock Company Moscow City Telephone Network,Russia,MCX,RUB,Common Stock,RU0009036461,6,,Telecom Services,Communication Services,1.9589467,186348077056,2082.2856,2206.5845,0.31391,0.75516
+138,MGTSP.ME,Public Joint Stock Company Moscow City Telephone Network,Russia,MCX,RUB,Common Stock,,6,,Telecom Services,Communication Services,1.3413805,187953119232,1391.1428,1677.5493,0.31391,0.75516
+139,MISB.ME,Public Joint-stock Company TNS energo Mari El,Russia,MCX,RUB,Common Stock,RU000A0D8K33,6,,Utilities—Regulated Electric,Utilities,3.7746172,1798264192,13.725715,13.675352,0.01661,0.49069
+140,MISBP.ME,Public Joint-stock Company TNS energo Mari El RUB0.1 PRF(RUB),Russia,MCX,RUB,Common Stock,,,,,,,1315958400,10.662857,11.361972,,
+141,MOEX.ME,Public Joint-Stock Company Moscow Exchange MICEX-RTS,Russia,MCX,RUB,Common Stock,RU000A0JR4A1,,,Financial Data & Stock Exchanges,Financial Services,3.0181365,420073013248,176.734,173.65465,0.4977,1
+150,MOEXMM.ME,MOEX Metals and Mining,Russia,MCX,RUB,Common Stock,,,,,,,,,,,
+151,MOEXOG.ME,MOEX Oil and Gas,Russia,MCX,RUB,Common Stock,,,,,,,,,,,
+154,MRKC.ME,Interregional Distribution Grid Company of Centre Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU000A0JPPL8,7,,Utilities—Regulated Electric,Utilities,0.36849687,17284005888,0.38896,0.3956169,0.040170003,0.12416001
+155,MRKK.ME,"Public Joint Stock Company ""ROSSETI Northern Caucasus""",Russia,MCX,RUB,Common Stock,RU000A0JPPQ7,4,,Utilities—Regulated Electric,Utilities,,27483334656,27.154858,26.905916,-0.41107,-0.16
+156,MRKP.ME,Interregional Distribution Grid Company of Center and Volga Region Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU000A0JPN96,6,,Utilities—Regulated Electric,Utilities,0.4540171,29932589056,0.24578285,0.25753945,0.0653,0.12619
+157,MRKS.ME,Public Joint Stock Company Interregional Distribution Grid Company of Siberia,Russia,MCX,RUB,Common Stock,RU000A0JPPF0,2,,Utilities—Regulated Electric,Utilities,1.7032968,29392711680,0.3006,0.32062325,-0.00307,0.04614
+158,MRKU.ME,Interregional Distribution Grid Company of Urals Joint Stock Company,Russia,MCX,RUB,Common Stock,RU000A0JPPT1,5,,Utilities—Regulated Electric,Utilities,0.29677418,14478490624,0.14835429,0.1506,0.011460001,0.048
+159,MRKV.ME,Public Joint Stock Company Rosseti Volga,Russia,MCX,RUB,Common Stock,RU000A0JPPN4,2,,Utilities—Regulated Electric,Utilities,0.2777778,10827710464,0.055081427,0.060954224,-0.0112,0.35579
+160,MRKY.ME,"Public Joint Stock Company ""ROSSETI South""",Russia,MCX,RUB,Common Stock,RU000A0JPPG8,4,,Utilities—Regulated Electric,Utilities,2.4473686,7051306496,0.04536,0.046023592,-0.0296,0.02244
+161,MRKZ.ME,Public Joint-Stock Company Interregional Distribution Grid Company of the North-West,Russia,MCX,RUB,Common Stock,RU000A0JPPB9,5,,Utilities—Regulated Electric,Utilities,0.26092234,5148492288,0.049777143,0.051276762,-0.0212,0.03516
+162,MRSB.ME,Mordovia Energy Retail Company Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0D9AJ7,,,Utilities—Regulated Electric,Utilities,2.9662163,590472576,0.42582858,0.4229507,0.01629,0.46681
+163,MSNG.ME,Public Joint Stock Company Mosenergo,Russia,MCX,RUB,Common Stock,RU0008958863,6,,Utilities—Independent Power Producers,Utilities,0.29874694,101400723456,2.2767286,2.2670987,0.0592,0.28706
+164,MSRS.ME,"Public Joint-Stock Company ""Rosseti Moscow Region""",Russia,MCX,RUB,Common Stock,RU000A0ET7Y7,6,,Utilities—Regulated Electric,Utilities,0.34665254,63806300160,1.2170286,1.2096971,0.04237,0.42438
+165,MSST.ME,Public Joint Stock Company Multisistema,Russia,MCX,RUB,Common Stock,RU000A0JTFH9,,,Engineering & Construction,Industrials,0.26042032,148700000,2.0473142,2.3212254,0.00567,0.097349994
+166,MSTT.ME,Public Joint Stock Company Mostotrest,Russia,MCX,RUB,Common Stock,RU0009177331,3,,Engineering & Construction,Industrials,11.586885,26231883776,93.75285,102.77782,-0.06317,0.10994001
+168,MTLR.ME,Mechel PAO,Russia,MCX,RUB,Common Stock,RU000A0DKXV5,8,,Steel,Basic Materials,,88396341248,88.34486,77.955635,0.16620001,0.36556998
+169,MTLRP.ME,Mechel PAO,Russia,MCX,RUB,Common Stock,,8,,Steel,Basic Materials,,105604055040,154.86143,107.70493,0.16620001,0.36556998
+170,MTSS.ME,Mobile TeleSystems Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU0007775219,8,,Telecom Services,Communication Services,9.872439,566701916160,321.3557,325.2757,0.11935,0.62118
+171,MVID.ME,Public Joint Stock Company M.video,Russia,MCX,RUB,Common Stock,RU000A0JPGA0,7,,Specialty Retail,Consumer Cyclical,7.6907897,110835539968,634.72284,683.68097,0.01561,0.23294
+172,NAUK.ME,Public joint stock company NPO Nauka,Russia,MCX,RUB,Common Stock,RU000A0JRPX9,6,,Aerospace & Defense,Industrials,0.82155895,2531923456,207.04,205.07747,0.1586,0.36626998
+173,NFAZ.ME,NEFAZ Publicly Traded Company,Russia,MCX,RUB,Common Stock,RU0009115604,,,Auto Manufacturers,Consumer Cyclical,10.344923,3016195328,340.8,339.5831,0.01054,0.053600002
+174,NKHP.ME,Public Joint Stock Company Novorossyisk Grain Plant,Russia,MCX,RUB,Common Stock,RU000A0BLWD7,7,,Marine Shipping,Industrials,2.8078432,24199725056,353.45715,360.22534,0.44284,0.72886
+175,NKNC.ME,Public Joint Stock Company Nizhnekamskneftekhim,Russia,MCX,RUB,Common Stock,RU0009100507,5,,Specialty Chemicals,Basic Materials,2.116152,282377355264,128.55,103.11303,0.05845,0.22448
+176,NKNCP.ME,Public Joint Stock Company Nizhnekamskneftekhim,Russia,MCX,RUB,Common Stock,,5,,Specialty Chemicals,Basic Materials,1.6899946,300849397760,100.57543,82.961975,0.05845,0.22448
+177,NKSH.ME,PJSC Nizhnekamskshina,Russia,MCX,RUB,Common Stock,RU0009100515,2,,,,,,,,,
+178,NLMK.ME,"Public Joint Stock Company ""Novolipetsk Steel""",Russia,MCX,RUB,Common Stock,RU0009046452,6,,Steel,Basic Materials,26.46934,1420275613696,248.88857,246.0821,0.17834999,0.40311
+179,NMTP.ME,Public Joint Stock Company Novorossiysk Commercial Sea Port,Russia,MCX,RUB,Common Stock,RU0009084446,5,,Marine Shipping,Industrials,135.96774,155810856960,7.497857,7.485176,0.28693,0.64896005
+180,NNSB.ME,Public Joint-Stock Company TNS energo Nizhny Novgorod,Russia,MCX,RUB,Common Stock,RU000A0ET5A1,,,Utilities—Regulated Electric,Utilities,23.518473,11016310784,2696.7144,2479.472,0.00616,0.45898
+181,NNSBP.ME,Public Joint-Stock Company TNS energo Nizhny Novgorod,Russia,MCX,RUB,Common Stock,,,,Utilities—Regulated Electric,Utilities,7.1864505,11540009984,780.54285,686.59155,0.00616,0.45898
+182,NSVZ.ME,Public Joint Stock Company Nauka-Telecom,Russia,MCX,RUB,Common Stock,RU000A0JQLB6,6,,Telecom Services,Communication Services,0.43783036,353146944,197.54286,205.62675,0.02948,0.40202
+183,NVTK.ME,PAO NOVATEK,Russia,MCX,RUB,Common Stock,RU000A0DKVS5,5,,Oil & Gas E&P,Energy,0.33144808,5591213801472,1683.3943,1523.5437,0.22859,0.44737998
+184,ODVA.ME,Public Joint-Stock Company Mediaholding,Russia,MCX,RUB,Common Stock,RU000A0JPWV3,3,,Broadcasting,Communication Services,,111720000,0.11210857,0.11441972,0,-0.80208
+185,OGKB.ME,"Public Joint-Stock Company ""Second Generating Company of the Electric Power Wholesale Market""",Russia,MCX,RUB,Common Stock,RU000A0JNG55,6,,Utilities—Independent Power Producers,Utilities,0.5525191,77088325632,0.6918457,0.7711415,0.1099,0.46055
+186,OMZZP.ME,Open Joint Stock Company OMZ,Russia,MCX,RUB,Common Stock,,4,,Specialty Industrial Machinery,Industrials,651.1438,3373549486080,4037,4196.7256,-0.19899,0.14189
+188,ORUP.ME,Public Joint-Stock Company OR,Russia,MCX,RUB,Common Stock,RU000A0JXKG3,2,,Footwear & Accessories,Consumer Cyclical,0.21520312,2767610880,28.95,29.039085,0.051960003,0.51704
+189,OZON.ME,Ozon Holdings PLC,Russia,MCX,RUB,Common Stock,,4,,Internet Retail,Consumer Cyclical,10.575649,,,,-0.19784,0.32591
+190,PAZA.ME,Public Joint Stock Company Pavlovo Bus,Russia,MCX,RUB,Common Stock,RU0009083240,4,,Auto Manufacturers,Consumer Cyclical,1.7690883,7358125568,6625.7144,7087.6055,0.042179998,0.12056
+191,PHOR.ME,Public Joint-Stock Company PhosAgro,Russia,MCX,RUB,Common Stock,RU000A0JRKT8,6,,Agricultural Inputs,Basic Materials,4.9651217,625873518592,4670.7715,4484.7676,0.18339,0.49337003
+192,PIKK.ME,Public Joint Stock Company PIK-specialized homebuilder,Russia,MCX,RUB,Common Stock,RU000A0JP7J7,5,,Real Estate—Diversified,Real Estate,5.1811743,914511167488,1189.0457,1008.2141,0.22722,0.27675
+193,PLZL.ME,Public Joint Stock Company Polyus,Russia,MCX,RUB,Common Stock,RU000A0JNAA8,8,,Gold,Basic Materials,664.74927,1825402519552,13640.814,14385.5,0.47632998,0.77919996
+194,PMSB.ME,Public Joint Stock Company Perm Energy Supplying Company,Russia,MCX,RUB,Common Stock,RU000A0ET123,,,Utilities—Regulated Electric,Utilities,3.8418186,7436820480,155.59428,160.9662,0.0182,0.06364
+195,PMSBP.ME,Public Joint Stock Company Perm Energy Supplying Company,Russia,MCX,RUB,Common Stock,,,,Utilities—Regulated Electric,Utilities,3.7698743,8113972224,152.12572,155.82112,0.0182,0.06364
+196,POGR.ME,Petropavlovsk PLC,Russia,MCX,RUB,Common Stock,GB0031544546,7,,Gold,Basic Materials,121.74033,,,,-0.04616,0.59351003
+197,POLY.ME,Polymetal International plc,Russia,MCX,RUB,Common Stock,JE00B6T5S470,8,,Other Precious Metals & Mining,Basic Materials,350.41245,704112820224,1539.9429,1597.4155,0.37905997,0.66038
+198,PRFN.ME,"Public joint stock company ""Chelyabinsk plant of the profiled steel decking""",Russia,MCX,RUB,Common Stock,RU000A0JNXF9,6,,Engineering & Construction,Industrials,0.12703378,1361378048,1.8996,1.8427465,0.00437,0.09906
+199,PRMB.ME,Public joint-stock commercial bank Primorye,Russia,MCX,RUB,Common Stock,RU000A0DPNQ5,,,Banks—Regional,Financial Services,2.6503909,11900000256,47331.43,40230.984,0.07451,0
+200,QIWI.ME,QIWI plc,Russia,MCX,RUB,Common Stock,,7,,Information Technology Services,Technology,1.24281,40654675968,718.9857,779.39087,0.22738001,0.42771998
+201,RASP.ME,Public Joint Stock Company Raspadskaya,Russia,MCX,RUB,Common Stock,RU000A0B90N8,,,Coking Coal,Basic Materials,245.26854,261944721408,289.904,237.45282,0.28595,0.29725
+202,RAVN.ME,Raven Property Group Limited,Russia,MCX,RUB,Common Stock,GB00B0D5V538,4,,Real Estate Services,Real Estate,80.8642,19330949120,29.585714,28.748943,-0.09212,0.73507005
+203,RBCM.ME,Public Joint Stock Company RBC,Russia,MCX,RUB,Common Stock,RU000A0JR6A6,8,,Internet Content & Information,Communication Services,,1321264256,3.6496,3.7096198,0.07971,0.47728002
+205,RDRB.ME,The Russian Public Joint-Stock Commercial Roads Bank (Public joint-stock company),Russia,MCX,RUB,Common Stock,RU000A0JU6Q7,5,,Banks—Regional,Financial Services,1.277081,3574121472,222.57143,226.13878,0.21181999,0
+206,RGSS.ME,Rosgosstrakh Insurance Company (Public Joint Stock Company),Russia,MCX,RUB,Common Stock,RU0008010855,,,Insurance—Diversified,Financial Services,2.4204082,116110352384,0.22841142,0.23019154,0.07241,0.21583
+207,RKKE.ME,S.P. Korolev Rocket and Space Public Corporation Energia Open Joint Stock Company,Russia,MCX,RUB,Common Stock,RU0009095939,1,,Aerospace & Defense,Industrials,,9860056064,7332.2856,7506.7607,-0.14576,0.22692
+208,RLMN.ME,"Public Joint Stock Company ""Rollman Group""",Russia,MCX,RUB,Common Stock,RU000A0JTAP3,3,,Specialty Industrial Machinery,Industrials,0.24616964,80957056,12.95,12.95,-0.03959,0.21663
+209,RLMNP.ME,"Public Joint Stock Company ""Rollman Group""",Russia,MCX,RUB,Common Stock,,3,,Specialty Industrial Machinery,Industrials,0.28627914,55063276,15.06,15.06,-0.03959,0.21663
+210,RNFT.ME,Public Joint Stock Company RussNeft,Russia,MCX,RUB,Common Stock,RU000A0JSE60,2,,Oil & Gas E&P,Energy,0.86940515,50000400384,156.26286,169.30704,-0.12729,0.53040004
+211,ROLO.ME,Public Joint Stock Company Rusolovo,Russia,MCX,RUB,Common Stock,RU000A0JU1B0,3,,Other Industrial Metals & Mining,Basic Materials,13.269987,30376013824,10.02,10.41845,-0.03966,0.012999999
+212,ROSB.ME,Public joint stock company ROSBANK,Russia,MCX,RUB,Common Stock,RU000A0HHK26,5,,Banks—Regional,Financial Services,0.6542748,121940033536,78.80572,78.89859,0.28554,0
+213,ROSN.ME,Public Joint Stock Company Rosneft Oil Company,Russia,MCX,RUB,Common Stock,RU000A0J2Q06,6,,Oil & Gas Integrated,Energy,1.0804878,5246849908736,548.2257,548.29474,0.08753,0.71629995
+214,ROST.ME,Public Joint Stock Company Rosinter Restaurants Holding,Russia,MCX,RUB,Common Stock,RU000A0JP922,2,,Restaurants,Consumer Cyclical,,1300423936,73.71429,70.21408,-0.46714002,-0.09202
+215,RSTI.ME,Rosseti Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU000A0JPVJ0,4,,Utilities—Regulated Electric,Utilities,0.23723808,285890445312,1.2898829,1.4301648,0.04304,0.15719
+216,RSTIP.ME,Rosseti Public Joint Stock Company,Russia,MCX,RUB,Common Stock,,4,,Utilities—Regulated Electric,Utilities,0.33938295,341519597568,1.9113715,2.0214226,0.04304,0.15719
+217,RTGZ.ME,Public Joint Stock Company Gazprom Gazoraspredelenie Rostov-na-Donu,Russia,MCX,RUB,Common Stock,RU000A0JPG04,,,Utilities—Regulated Gas,Utilities,0.24714051,4352905216,36037.145,38431.69,0.10328,0.37228
+218,RTKM.ME,Public Joint Stock Company Rostelecom,Russia,MCX,RUB,Common Stock,RU0008943394,6,,Telecom Services,Communication Services,1.7681555,316528459776,94.65143,102.32169,0.049629997,0.53588
+219,RTKMP.ME,Public Joint Stock Company Rostelecom,Russia,MCX,RUB,Common Stock,,6,,Telecom Services,Communication Services,1.5953981,333254721536,86.03571,89.961266,0.049629997,0.53588
+220,RTSB.ME,"Public Joint Stock Company ""TNS energo Rostov-on-Don""",Russia,MCX,RUB,Common Stock,RU000A0D8PB4,6,,Utilities—Regulated Electric,Utilities,,4366247936,0.47077143,0.4975141,0.0040599997,0.05214
+221,RTSBP.ME,"Public Joint Stock Company ""TNS energo Rostov-on-Don""",Russia,MCX,RUB,Common Stock,,6,,Utilities—Regulated Electric,Utilities,,4441226752,0.45677143,0.4723169,0.0040599997,0.05214
+227,RUAL.ME,United Company RUSAL International Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A1025V3,6,,Aluminum,Basic Materials,142.70302,934445449216,51.66714,50.757782,0.08861,0.16974
+231,RUGR.ME,Public Joint-Stock Company Rusgrain Holding,Russia,MCX,RUB,Common Stock,RU000A0JPNP4,4,,Farm Products,Consumer Defensive,,510306048,11.841429,12.345394,-0.27598,0.010729999
+234,RUSI.ME,Public Joint-Stock Company Investment Company IC Russ-Invest,Russia,MCX,RUB,Common Stock,RU000A0JQ9W5,,,Capital Markets,Financial Services,1.360254,6195182080,57.974285,54.912678,1.31661,0.97454
+235,RZSB.ME,Joint-Stock Company Ryazanenergosbyt,Russia,MCX,RUB,Common Stock,RU000A0D9AF5,,,Utilities—Regulated Electric,Utilities,3.7771032,3604894720,17.63943,17.02676,0.03873,0.0995
+236,SAGO.ME,Public Joint-Stock Energy and Electrification Company Samaraenergo,Russia,MCX,RUB,Common Stock,RU0009098255,,,Utilities—Regulated Electric,Utilities,0.5216073,2434783744,0.67565715,0.6288873,0.01587,0.07462
+237,SAGOP.ME,Public Joint-Stock Energy and Electrification Company Samaraenergo RUB0.01 PRF(USD),Russia,MCX,RUB,Common Stock,,,,,,,2261376256,0.62,0.5398662,,
+238,SARE.ME,Public Joint Stock Company Saratovenergo,Russia,MCX,RUB,Common Stock,RU0009100754,,,Utilities—Regulated Electric,Utilities,3.5485713,604249152,0.121662855,0.12525775,0.00032000002,0.42836
+239,SAREP.ME,Public Joint Stock Company Saratovenergo,Russia,MCX,RUB,Common Stock,,,,Utilities—Regulated Electric,Utilities,3.0857143,806795648,0.10308,0.10601409,0.00032000002,0.42836
+241,SBER.ME,Sberbank of Russia,Russia,MCX,RUB,Common Stock,RU0009029540,3,,Banks—Regional,Financial Services,1.3498231,13670675382272,318.134,301.91205,0.49137002,0
+242,SBERP.ME,Sberbank of Russia,Russia,MCX,RUB,Common Stock,RU0009029557,3,,,,,,,,,
+247,SBSP.ME,SBSP,Russia,MCX,RUB,Common Stock,RU000A1006W1,,,,,,,,,,
+248,SELG.ME,Public Joint-Stock Company Seligdar,Russia,MCX,RUB,Common Stock,RU000A0JPR50,6,,Gold,Basic Materials,1.8351617,37905977344,43.78257,44.479298,0.0074699996,0.47513
+249,SELGP.ME,Public Joint-Stock Company Seligdar,Russia,MCX,RUB,Common Stock,,,,,,,11342289920,43.644287,43.71479,,
+250,SFIN.ME,"Public Joint Stock Company ""SAFMAR Financial investments""",Russia,MCX,RUB,Common Stock,RU000A0JVW89,5,,Rental & Leasing Services,Industrials,0.3237636,49902186496,453.34286,469.63098,0.32821,1
+251,SGZH.ME,Group of Companies Segezha Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU000A102XG9,5,,Packaging & Containers,Consumer Cyclical,,,,,-0.01952,0.33793998
+252,SIBG.ME,SIBIRSKIY GOSTINETS Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0JVA36,5,,Farm Products,Consumer Defensive,0.99111116,267600000,0.13071428,0.21334507,-0.41908002,0.36470002
+253,SIBN.ME,Public Joint Stock Company Gazprom Neft,Russia,MCX,RUB,Common Stock,RU0009062467,5,,Oil & Gas Integrated,Energy,0.9514463,2062709686272,425.02573,394.17078,0.11249,0.63081
+254,SLEN.ME,"Public Joint Stock Company ""Sakhalinenergo""",Russia,MCX,RUB,Common Stock,RU0009280465,5,,Utilities—Regulated Electric,Utilities,0.7630601,1147259136,,,-0.17885,0.18202
+255,SMLT.ME,Samolet Group Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU000A0ZZG02,4,,Real Estate—Development,Real Estate,27.924194,,,,0.0537,0.25583
+256,SNGS.ME,Surgutneftegas Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU0008926258,,,Oil & Gas Integrated,Energy,0.23543389,1207002857472,33.33557,34.97602,0.70015997,0.87474
+257,SNGSP.ME,Surgutneftegas Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU0009029524,,,Oil & Gas Integrated,Energy,0.26759395,1417912385536,38.190285,42.417606,0.70015997,0.87474
+258,STSB.ME,Stavropolenergosbyt Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0ET1W4,8,,Utilities—Regulated Electric,Utilities,0.71637744,725882880,0.6493,0.6244014,0.008450001,0.45963
+259,STSBP.ME,Stavropolenergosbyt Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,,8,,Utilities—Regulated Electric,Utilities,0.6133406,678956288,0.5504429,0.5531338,0.008450001,0.45963
+261,SVAV.ME,Sollers Public Joint Stock Company,Russia,MCX,RUB,Common Stock,RU0006914488,4,,Auto Manufacturers,Consumer Cyclical,0.47411144,7882100224,208.65715,228.28873,-0.0322,0.13262
+262,TASB.ME,Public Joint Stock Company Tambov power supply company,Russia,MCX,RUB,Common Stock,RU000A0D8NG8,,,Utilities—Regulated Electric,Utilities,2.6073298,848447552,0.4947143,0.4606655,0.01926,0.47202
+263,TASBP.ME,Public Joint Stock Company Tambov Power Supply Company RUB0.02 PRF(USD),Russia,MCX,RUB,Common Stock,,,,Utilities—Regulated Electric,Utilities,,769861952,0.42691427,0.36845422,0.01926,0.47202
+264,TATN.ME,PJSC Tatneft,Russia,MCX,RUB,Common Stock,RU0009033591,5,,Oil & Gas Integrated,Energy,1.2532624,1087855001600,492.9,531.1803,0.16007,0.67037004
+265,TATNP.ME,PJSC Tatneft,Russia,MCX,RUB,Common Stock,RU0006944147,5,,Oil & Gas Integrated,Energy,1.2383009,1104682024960,461.29144,498.80423,0.16007,0.67037004
+267,TCSG.ME,TCS Group Holding PLC,Russia,MCX,RUB,Common Stock,,5,,Banks—Regional,Financial Services,10.476711,1397088059392,6736.474,5358.1914,0.41588002,0
+270,TGKA.ME,Public Joint Stock Company Territorial Generating Company No. 1,Russia,MCX,RUB,Common Stock,RU000A0JNUD0,6,,Utilities—Regulated Electric,Utilities,0.35217646,46151868416,0.011472858,0.011786831,0.086260006,0.43787998
+271,TGKB.ME,Public Joint-Stock Company Territorial Generation Company No.2,Russia,MCX,RUB,Common Stock,RU000A0JNGS7,5,,Utilities—Independent Power Producers,Utilities,0.16115384,4555032576,0.0040351427,0.004132324,-0.0023100001,0.29672
+272,TGKBP.ME,Public Joint-Stock Company Territorial Generation Company No.2,Russia,MCX,RUB,Common Stock,,5,,Utilities—Independent Power Producers,Utilities,0.2530769,4381871616,0.006583143,0.006763028,-0.0023100001,0.29672
+273,TGKD.ME,"Public Joint Stock Company ""Quadra - Power Generation""",Russia,MCX,RUB,Common Stock,RU000A0JNMZ0,6,,Utilities—Regulated Electric,Utilities,0.2652174,12090627072,0.0059348573,0.005593662,4.0000003e-05,0.21901
+274,TGKDP.ME,"Public Joint Stock Company ""Quadra - Power Generation""",Russia,MCX,RUB,Common Stock,,6,,Utilities—Regulated Electric,Utilities,0.25086957,13178102784,0.0057014287,0.005292676,4.0000003e-05,0.21901
+275,TGKN.ME,Public Joint Stock Company Territorial Generation Company No. 14,Russia,MCX,RUB,Common Stock,RU000A0H1ES3,7,,Utilities—Regulated Electric,Utilities,0.564,3829419008,0.002816,0.0029419719,0.03817,0.52657
+279,TNSE.ME,Public Joint Stock Company Group of Companies TNS energo,Russia,MCX,RUB,Common Stock,RU000A0JUCQ5,4,,Utilities—Regulated Electric,Utilities,2.569079,11939300352,943.4286,977.74646,-0.01424,0.048210002
+280,TORS.ME,public-stock company Tomsk distribution company,Russia,MCX,RUB,Common Stock,RU000A0ETZF2,,,Utilities—Regulated Electric,Utilities,0.4487805,1567591680,0.36545715,0.3666972,-0.04232,-0.05723
+281,TORSP.ME,public-stock company Tomsk distribution company,Russia,MCX,RUB,Common Stock,,,,Utilities—Regulated Electric,Utilities,0.34024394,1556128256,0.2756,0.27478522,-0.04232,-0.05723
+282,TRMK.ME,PAO TMK,Russia,MCX,RUB,Common Stock,RU000A0B6NK6,6,,Steel,Basic Materials,1.9913061,128727998464,97.148,80.28957,0.012569999,0.21303
+283,TRNFP.ME,Public Joint Stock Company Transneft,Russia,MCX,RUB,Common Stock,RU0009091573,6,,Oil & Gas Midstream,Energy,0.55879915,1219338960896,160248.58,153871.12,0.13325,0.50636
+286,TTLK.ME,Tattelecom Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0HM5C1,8,,Telecom Services,Communication Services,1.7405913,12940804096,0.59227145,0.5936479,0.19023001,0.48033002
+287,TUCH.ME,Tuchkovskiy complex of construction materials,Russia,MCX,RUB,Common Stock,RU000A0JR4D5,6,,Building Materials,Basic Materials,1.5533375,198502800,1.6968571,1.8840563,0.051960003,0.31786
+289,TUZA.ME,Tuimazinskiy Zavod Avtobetonovozov Publicly Traded Company,Russia,MCX,RUB,Common Stock,RU000A0HL7A2,,,Farm & Heavy Construction Machinery,Industrials,11.430893,809670016,94.77143,94.75,0.057589997,0.12964
+290,UCSS.ME,Public Joint Stock Company United Credit Systems,Russia,MCX,RUB,Common Stock,RU000A0JTQK0,2,,Capital Markets,Financial Services,1.2634819,23481810944,1022.8571,1108.9436,0.79727995,0
+291,UKUZ.ME,Southern Kuzbass Coal company Public joint-stock company,Russia,MCX,RUB,Common Stock,RU0005294775,2,,Thermal Coal,Energy,,26865244160,602.8,600.23944,-0.7463,0.14212
+292,UNAC.ME,Public Joint Stock Company United Aircraft Corporation,Russia,MCX,RUB,Common Stock,RU000A0JPLZ7,5,,Aerospace & Defense,Industrials,,318709858304,0.69244283,0.5912148,-0.35336,0.29604998
+293,UNKL.ME,Southern Urals Nickel Plant PJSC,Russia,MCX,RUB,Common Stock,RU0004887991,,,Other Industrial Metals & Mining,Basic Materials,0.6806169,5703498752,8678,9367.395,2.5805302,0.41900003
+294,UPRO.ME,Public Joint-Stock Company Unipro,Russia,MCX,RUB,Common Stock,RU000A0JNGA5,,,Utilities—Independent Power Producers,Utilities,1.531892,178680020992,2.7870572,2.8454578,0.19176,0.48776
+295,URKZ.ME,Urals Stampings Plant PAO,Russia,MCX,RUB,Common Stock,RU000A0JPFY2,6,,Steel,Basic Materials,0.27110466,8983280640,15956,17031.973,0.26243,0.19684
+296,USBN.ME,Public joint stock company BANK URALSIB,Russia,MCX,RUB,Common Stock,RU0006929536,5,,Banks—Regional,Financial Services,0.33721805,32304109568,0.08785714,0.082870424,0.00929,0
+297,UTAR.ME,Public Joint-Stock Company UTair Aviation,Russia,MCX,RUB,Common Stock,RU0007661385,,,Airlines,Industrials,,24644757504,6.7577143,6.9276056,0.057490002,0.27469
+298,UWGN.ME,Public Joint Stock Company Research and Production Corporation United Wagon Company,Russia,MCX,RUB,Common Stock,RU000A0JVBT9,5,,Railroads,Industrials,12.18571,11356400640,73.07143,90.86901,-0.10153,0.19285999
+299,VGSB.ME,Volgogradenergosbyt Public Joint-Stock Company,Russia,MCX,RUB,Common Stock,RU000A0D8L73,,,Utilities—Regulated Electric,Utilities,,1289944576,3.5842857,3.775845,0.00433,0.077020004
+300,VGSBP.ME,Volgogradenergosbyt Public Joint-Stock Company RUB0.12 PRF(RUB),Russia,MCX,RUB,Common Stock,,,,,,,,1.8621428,1.9813732,,
+301,VJGZ.ME,Public Joint Stock Company Varyoganneftegaz,Russia,MCX,RUB,Common Stock,RU0009046460,3,,Oil & Gas Drilling,Energy,0.98085487,31695607808,1722.0571,1798.4225,-0.01785,0.06429
+302,VJGZP.ME,Public Joint Stock Company Varyoganneftegaz,Russia,MCX,RUB,Common Stock,,3,,Oil & Gas Drilling,Energy,0.3381486,21095727104,608.7714,622.8662,-0.01785,0.06429
+303,VLHZ.ME,Public Joint Stock Company Vladimir Chemical Plant,Russia,MCX,RUB,Common Stock,RU0007984761,7,,Specialty Chemicals,Basic Materials,1.3166682,365158496,67.37428,70.61796,0.013990001,0.11063
+304,VRSB.ME,"Public Joint-stock Company ""TNS energo Voronezh""",Russia,MCX,RUB,Common Stock,RU000A0DPG67,5,,Utilities—Regulated Electric,Utilities,4.2838516,4671045120,69.41143,68.014084,0.01169,0.45417
+305,VRSBP.ME,Public Joint Stock Company TNS energo Voronezh RUB0.4 PRF(RUB),Russia,MCX,RUB,Common Stock,,,,,,,2459413760,42.26857,42.39789,,
+306,VSMO.ME,public stock company VSMPO-AVISMA Corporation,Russia,MCX,RUB,Common Stock,RU0009100291,6,,Other Industrial Metals & Mining,Basic Materials,1.8117074,366126104576,30524,27267.465,0.07376,0.34952998
+307,VSYD.ME,Public joint-stock company Vyborg Shipyard,Russia,MCX,RUB,Common Stock,RU0006334372,3,,Aerospace & Defense,Industrials,,9424229376,4589.5713,4693.2393,-0.42349,-0.044889998
+308,VSYDP.ME,Public joint-stock company Vyborg Shipyard,Russia,MCX,RUB,Common Stock,,3,,Aerospace & Defense,Industrials,,9316384768,4663.4287,4715.9155,-0.42349,-0.044889998
+314,VTBR.ME,VTB Bank (public joint-stock company),Russia,MCX,RUB,Common Stock,RU000A0JP5V6,4,,Banks—Regional,Financial Services,0.00018730739,700190949376,0.05002143,0.046589788,0.22481,0
+318,WTCM.ME,"Joint Stock Company ""World Trade Center Moscow""",Russia,MCX,RUB,Common Stock,RU0008137070,,,Real Estate Services,Real Estate,0.19898644,10061557760,9.611428,10.004226,-0.0255,0.52913
+319,WTCMP.ME,"Joint Stock Company ""World Trade Center Moscow"" RUB1 PRF(USD)",Russia,MCX,RUB,Common Stock,,,,,,,8049624576,8.856,9.2104225,,
+320,YAKG.ME,Public Joint Stock Company Yakutsk Fuel and Energy Company,Russia,MCX,RUB,Common Stock,RU0007796819,6,,Oil & Gas Integrated,Energy,6.7472453,78474608640,96.44143,104.420425,0.28221,0.65108
+321,YKEN.ME,Public joint stock company Yakutskenergo,Russia,MCX,RUB,Common Stock,RU0009257075,3,,Utilities—Regulated Electric,Utilities,0.17121144,3488796672,0.38937142,0.41617957,-0.09649,-0.107159995
+322,YKENP.ME,Public joint stock company Yakutskenergo,Russia,MCX,RUB,Common Stock,,3,,Utilities—Regulated Electric,Utilities,0.14662495,3452396800,0.34714285,0.3608979,-0.09649,-0.107159995
+323,YNDX.ME,Yandex N.V,Russia,MCX,RUB,Common Stock,NL0009805522,6,,Internet Content & Information,Communication Services,6.3234043,2113965654016,5143.577,4968.8604,0.05716,0.54511
+324,YRSB.ME,Public Joint Stock Company TNS Energo Yaroslavl,Russia,MCX,RUB,Common Stock,RU000A0D8760,6,,Utilities—Regulated Electric,Utilities,6.558784,4057761024,210.28572,218.67606,0.00385,0.45129
+325,YRSBP.ME,Public Joint Stock Company TNS Energo Yaroslavl RUB1 PRF(USD),Russia,MCX,RUB,Common Stock,,6,,Utilities—Regulated Electric,Utilities,,1568639360,91.65714,91.94718,0.00385,0.45129
+326,ZILL.ME,Public Joint-Stock Company The Likhachov Plant,Russia,MCX,RUB,Common Stock,RU0009086193,5,,Farm & Heavy Construction Machinery,Industrials,0.44293493,11371328512,4202.7144,3806.6196,412.6978,-0.16431999
+327,ZVEZ.ME,Public Joint Stock Company Zvezda,Russia,MCX,RUB,Common Stock,RU0009091300,3,,Auto Parts,Consumer Cyclical,3.0295565,2419495936,4.064,4.1745424,-0.42657003,-0.35264

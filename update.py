@@ -3,8 +3,8 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 # local imports
-from indicators import piotroski
-from indicators import peg
+import piotroski
+import peg
 
 def csv(ticker, csv_list, ticker_in_df):
     
@@ -26,9 +26,13 @@ def csv(ticker, csv_list, ticker_in_df):
                 index = df.loc[(df.Code == ticker), "Code"].index.item()
                 break
     else:
-        for path in df_array:
+        for path in csv_list:
             frame = pd.read_csv(path, index_col=0)
             if (frame.Country == info['country']).any():
+                filepath = path
+                df = frame
+                break
+            if (frame.Exchange == "XETRA").any() and info["country"] == "Germany":
                 filepath = path
                 df = frame
                 break

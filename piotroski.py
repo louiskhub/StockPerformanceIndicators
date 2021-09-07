@@ -7,12 +7,14 @@ import matplotlib.pyplot as plt
 import errors
 import update
 
+
+
 def visual_f_score(ticker_input, df, csv_list):
     """Visualizes the Piotroski F-Score.
     Explanation of the Score: https://www.investopedia.com/terms/p/piotroski-score.asp
     """
 
-    main_ticker = str(ticker_input)
+    main_ticker = str(ticker_input).upper()
     
     ticker_in_df = (df.Code == main_ticker).any()
     fscore_in_df = df.loc[(df.Code == main_ticker),"F-Score"].notna().any()
@@ -20,7 +22,8 @@ def visual_f_score(ticker_input, df, csv_list):
     if ticker_in_df and fscore_in_df:
         main_score = df.loc[(df.Code == main_ticker), "F-Score"]
         main_index = df[df.Code == main_ticker].index.item()
-        df = df.drop(index=main_index)
+        df.drop(index=main_index, inplace=True)
+        df.reset_index(drop=True, inplace=True)
     else:
         yf_ticker = yf.Ticker(main_ticker)
         if yf_ticker.info["regularMarketPrice"] == None:
@@ -28,6 +31,7 @@ def visual_f_score(ticker_input, df, csv_list):
         main_score = f_score(main_ticker)
         if main_score == None:
             raise errors.MetricError(main_ticker)
+        print(ticker_in_df)
         update.csv(main_ticker, csv_list, ticker_in_df)
     
     arr = df.loc[df.loc[:,"F-Score"].notna(),["Code","F-Score"]].values
@@ -109,17 +113,19 @@ def visual_f_score(ticker_input, df, csv_list):
 
     plt.show()
 
+    pass
+
 
 
 def f_score(ticker):
     """Returns the Piotroski F-Score of a yf.Ticker object.
     Explanation of the Score: https://www.investopedia.com/terms/p/piotroski-score.asp
     """
-    ticker = yf.Ticker(ticker)
+    yf_ticker = yf.Ticker(ticker)
     try:
-        financials = ticker.financials
-        cf = ticker.cashflow
-        balance = ticker.balance_sheet
+        financials = yf_ticker.financials
+        cf = yf_ticker.cashflow
+        balance = yf_ticker.balance_sheet
 
         criteria = np.array([
             net_income(financials),
@@ -128,12 +134,12 @@ def f_score(ticker):
             cf_ni_ratio(cf, financials),
             ltd(balance),
             leverage(balance),
-            dilution(cf),
+            no_dilution(cf),
             gross_margin(financials),
             atr(balance, financials)
         ], dtype=np.bool_)
 
-        criteria_fulfilled = criteria[criteria == 1]
+        criteria_fulfilled = criteria[criteria == True]
         return criteria_fulfilled.size
     
     except:
@@ -146,9 +152,10 @@ def net_income(financials_df):
     
     net_income = financials_df.iloc[financials_df.index.get_loc("Net Income"),0]
     if (net_income > 0):
-        return 1
+        return True
+        print("ni")
     else:
-        return 0
+        return False
 
 def roa(balance_df, financials_df):
     """Checks if the ROA (Return on Assets) is positive."""
@@ -157,18 +164,20 @@ def roa(balance_df, financials_df):
     net_income = financials_df.iloc[financials_df.index.get_loc("Net Income"),0]
     roa = net_income/total_assets
     if (roa > 0):
-        return 1
+        return True
+        print("roa")
     else:
-        return 0
+        return False
 
 def operating_cf(cf_df):
     """Checks if the latest reported Operating CF (Cashflow) is positive."""
     
     cf = cf_df.iloc[cf_df.index.get_loc("Total Cash From Operating Activities"),0]
     if (cf > 0):
-        return 1
+        return True
+        print("ocf")
     else:
-        return 0
+        return False
 
 def cf_ni_ratio(cf_df, financials_df):
     """Checks if the latest reported Operating CF (Cashflow) is larger than the latest reported NI (Net Income)."""
@@ -176,9 +185,10 @@ def cf_ni_ratio(cf_df, financials_df):
     cf = cf_df.iloc[cf_df.index.get_loc("Total Cash From Operating Activities"),0]
     net_income = financials_df.iloc[financials_df.index.get_loc("Net Income"),0]
     if (cf > net_income):
-        return 1
+        return True
+        print("cfni")
     else:
-        return 0
+        return False
 
 def ltd(balance_df):
     """Checks if the current LTD (Long Term Debt) was reduced since previous year"""
@@ -186,9 +196,10 @@ def ltd(balance_df):
     lt_debt_curr = balance_df.iloc[balance_df.index.get_loc("Long Term Debt"),0]
     lt_debt_prev = balance_df.iloc[balance_df.index.get_loc("Long Term Debt"),1]
     if (lt_debt_curr < lt_debt_prev):
-        return 1
+        return True
+        print("ltd")
     else:
-        return 0
+        return False
 
 def leverage(balance_df):
     """Checks if the leverage exposure was reduced since previous year"""
@@ -202,22 +213,26 @@ def leverage(balance_df):
     liab_prev = balance_df.iloc[balance_df.index.get_loc("Total Current Liabilities"),1]
     ratio_prev = assets_prev/liab_prev # Working Capital ratio from previous year
     if (ratio_curr > ratio_prev):
-        return 1
+        return True
+        print("lev")
     else:
-        return 0
+        return False
 
-def dilution(balance_df):
+def no_dilution(cf_df):
     """Checks if the shares of investors were NOT diluted since previous year"""
-
-    issued_stock = balance_df.iloc[balance_df.index.get_loc("Issuance Of Stock"),0] # Earnings of the company through stock issuance
     try:
-        repurchased_stock = balance_df.iloc[balance_df.index.get_loc("Repurchase Of Stock"),0] # Expenditures of the company through stock repurchases
+        issued_stock = cf_df.iloc[cf_df.index.get_loc("Issuance Of Stock"),0] # Earnings of the company through stock issuance
+    except:
+        issued_stock = 0
+    try:
+        repurchased_stock = cf_df.iloc[cf_df.index.get_loc("Repurchase Of Stock"),0] # Expenditures of the company through stock repurchases
     except:
         repurchased_stock = 0
     if (issued_stock + repurchased_stock <= 0):
-        return 1
+        return True
+        print("nd")
     else:
-        return 0
+        return False
 
 def gross_margin(financials_df):
     """Checks if the gross margin grew since previous year"""
@@ -232,9 +247,10 @@ def gross_margin(financials_df):
     gross_margin_curr = net_sales_curr - cogs_curr
     gross_margin_prev = net_sales_prev - cogs_prev
     if (gross_margin_curr > gross_margin_prev):
-        return 1
+        return True
+        print("gm")
     else:
-        return 0
+        return False
 
 def atr(balance_df, financials_df):
     """Checks ATR (Asset Turnover Ratio) grew since previous year"""
@@ -252,6 +268,7 @@ def atr(balance_df, financials_df):
     atr_curr = net_sales_curr / ((beginning_assets_curr + ending_assets_curr)/2)
     atr_prev = net_sales_prev / ((beginning_assets_prev + ending_assets_prev)/2)
     if (atr_curr > atr_prev):
-        return 1
+        return True
+        print("atr")
     else:
-        return 0
+        return False

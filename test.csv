@@ -1,0 +1,5 @@
+ind,Code,F-Score,PEG-Ratio,Industry,Sector,Price to Book,Market Cap,50 Day Av,200 Day Av,Profit Margin,Gross Margin
+0, AAPL,7,1.4,Consumer Electronics,Technology,37.216595,2574896594944.0,148.05629,133.90805,0.25004,0.41005
+1, TSLA,7,2.67,Auto Manufacturers,Consumer Cyclical,30.692022,706669969408.0,693.828,667.44403,0.0318,0.21177
+2, MSFT,8,2.25,Software—Infrastructure,Technology,16.867754,2268057042944.0,292.16544,261.3456,0.36451998,0.68926
+3, RAA.DE,7,,Industrial Distribution,Industrials,19.200228,10721909760.0,924.80286,773.7162,0.13797,0.5543
