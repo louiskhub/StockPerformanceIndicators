@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 # local imports
 import errors
 import update
+import visualization
 
 def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
     """Visualizes the PEG-Ratio.
@@ -18,7 +19,7 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
     peg_in_df = df.loc[(df.Code == main_ticker),"PEG-Ratio"].notna().any()
 
     if ticker_in_df & peg_in_df:
-        main_ratio = df.loc[(df.Code == main_ticker), "PEG-Ratio"]
+        main_ratio = df.loc[(df.Code == main_ticker), "PEG-Ratio"].item()
         main_index = df[df["Code"] == main_ticker].index.item()
         df.drop(index=main_index, inplace=True)
         df.reset_index(drop=True, inplace=True)
@@ -26,7 +27,7 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
         yf_ticker = yf.Ticker(main_ticker)
         if yf_ticker.info["regularMarketPrice"] == None:
             raise errors.TickerError(main_ticker)
-        main_ratio = ratio(yf_ticker)
+        main_ratio = ratio(main_ticker)
         if main_ratio == None:
             raise errors.MetricError(main_ticker)
         if ticker_in_df:
@@ -35,22 +36,23 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
             usa_df = pd.read_csv("cache/usa.csv", index_col=0)
             update.csv(main_ticker, csv_list, ticker_in_df)
     
-    if (main_ratio < scope[1]).all():
+    if (main_ratio < scope[1]):
         print("\nThe minimum scope specified is not low enough to display the PEG-ratio of " + main_ticker)
         print("Please select a minimum scope below " + str(main_ratio) + "\n")
-        return visualize(1)
-    elif (main_ratio > scope[0]).all:
+        return visualization.visualize(2)
+    elif (main_ratio > scope[0]):
         print("\nThe maximum scope specified is not high enough to display the PEG-ratio of " + main_ticker)
         print("Please select a maximum scope above " + str(main_ratio) + "\n")
-        return visualize(1)
+        return visualization.visualize(2)
     
+    # boolean masks for df-cleaning for unfitting values
     ratio_notna = df.loc[:,"PEG-Ratio"].notna()
     ratio_max = df.loc[:,"PEG-Ratio"] < scope[0]
     ratio_min = df.loc[:,"PEG-Ratio"] > scope[1]
     
-    arr = df.loc[(ratio_notna & ratio_max & ratio_min),["Code","PEG-Ratio"]].values
-    tickers = arr[:,0]
-    y = arr[:,1]
+    arr = df.loc[(ratio_notna & ratio_max & ratio_min),["Code","PEG-Ratio"]].values # clean df
+    tickers = arr[:,0] # safe array-columns into own
+    y = arr[:,1] # arrays
     sorted_indices = y.argsort(kind="quicksort")
     y = y[sorted_indices]
     tickers = tickers[sorted_indices]
@@ -60,10 +62,16 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
     fig = plt.figure(figsize=(17, 10), dpi=80)
     ax = fig.add_subplot()
 
+    ymax = np.amax(y)
+    ymin = np.amin(y)
+    if main_ratio > ymax:
+        ymax = main_ratio
+    elif main_ratio < ymin:
+        ymin = main_ratio
     ax.set(
         title = "PEG-Ratios",
-        ylim = [np.amin(y), np.amax(y)],
-        #yticks = np.arange(10),
+        ylim = [ymin-5, ymax+5],
+        #yticks = y,
         xlim = [-10, x.size + 10],
         xticks = x,
         ylabel = "Ratios", 
@@ -76,8 +84,6 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
         bottom=False,      # ticks along the bottom edge are off
         top=False,         # ticks along the top edge are off
         labelbottom=False)
-    #ax.set_axisbelow(True) # move the plt.grid into the background
-    #plt.grid(axis="y")
 
     mean = np.mean(y)
     std_top = np.full(length, mean + np.std(y))

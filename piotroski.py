@@ -14,14 +14,14 @@ def visual_f_score(ticker_input, df, csv_list):
     Explanation of the Score: https://www.investopedia.com/terms/p/piotroski-score.asp
     """
 
-    main_ticker = str(ticker_input).upper()
+    main_ticker = ticker_input
     
     ticker_in_df = (df.Code == main_ticker).any()
     fscore_in_df = df.loc[(df.Code == main_ticker),"F-Score"].notna().any()
 
     if ticker_in_df and fscore_in_df:
         main_score = df.loc[(df.Code == main_ticker), "F-Score"]
-        main_index = df[df.Code == main_ticker].index.item()
+        main_index = df[df.Code == main_ticker].index[0]
         df.drop(index=main_index, inplace=True)
         df.reset_index(drop=True, inplace=True)
     else:
@@ -31,7 +31,6 @@ def visual_f_score(ticker_input, df, csv_list):
         main_score = f_score(main_ticker)
         if main_score == None:
             raise errors.MetricError(main_ticker)
-        print(ticker_in_df)
         update.csv(main_ticker, csv_list, ticker_in_df)
     
     arr = df.loc[df.loc[:,"F-Score"].notna(),["Code","F-Score"]].values
@@ -153,7 +152,6 @@ def net_income(financials_df):
     net_income = financials_df.iloc[financials_df.index.get_loc("Net Income"),0]
     if (net_income > 0):
         return True
-        print("ni")
     else:
         return False
 
@@ -165,7 +163,6 @@ def roa(balance_df, financials_df):
     roa = net_income/total_assets
     if (roa > 0):
         return True
-        print("roa")
     else:
         return False
 
@@ -175,7 +172,6 @@ def operating_cf(cf_df):
     cf = cf_df.iloc[cf_df.index.get_loc("Total Cash From Operating Activities"),0]
     if (cf > 0):
         return True
-        print("ocf")
     else:
         return False
 
@@ -186,7 +182,6 @@ def cf_ni_ratio(cf_df, financials_df):
     net_income = financials_df.iloc[financials_df.index.get_loc("Net Income"),0]
     if (cf > net_income):
         return True
-        print("cfni")
     else:
         return False
 
@@ -197,7 +192,6 @@ def ltd(balance_df):
     lt_debt_prev = balance_df.iloc[balance_df.index.get_loc("Long Term Debt"),1]
     if (lt_debt_curr < lt_debt_prev):
         return True
-        print("ltd")
     else:
         return False
 
@@ -214,7 +208,6 @@ def leverage(balance_df):
     ratio_prev = assets_prev/liab_prev # Working Capital ratio from previous year
     if (ratio_curr > ratio_prev):
         return True
-        print("lev")
     else:
         return False
 
@@ -230,7 +223,6 @@ def no_dilution(cf_df):
         repurchased_stock = 0
     if (issued_stock + repurchased_stock <= 0):
         return True
-        print("nd")
     else:
         return False
 
@@ -248,7 +240,6 @@ def gross_margin(financials_df):
     gross_margin_prev = net_sales_prev - cogs_prev
     if (gross_margin_curr > gross_margin_prev):
         return True
-        print("gm")
     else:
         return False
 
@@ -269,6 +260,5 @@ def atr(balance_df, financials_df):
     atr_prev = net_sales_prev / ((beginning_assets_prev + ending_assets_prev)/2)
     if (atr_curr > atr_prev):
         return True
-        print("atr")
     else:
         return False

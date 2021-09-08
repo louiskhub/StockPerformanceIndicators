@@ -2,6 +2,7 @@
 import json
 # local imports
 from visualization import visualize
+from data_into_csv import data_into_csv
 import errors
 
 
@@ -23,28 +24,28 @@ def selection():
 
 def main():
     while True:
-        print("\n\nType 'break' to exit the script.")
-        print("\n\nSelect what you want to do: \n")
+        print("\n\n\n\nType 'break' to exit the script.")
+        print("\n\nSelect what you want to do: \n\n")
         print(json.dumps([ # Pretty print
             "Visualize the Piotroski F-score of a stock: 1",
             "Visualize the PEG-ratio of a stock: 2",
-            "Download a CSV file with stock tickers from eodhistoricaldata.com: 3",
-            "Load stock perfomance-indicators into a CSV file: 4"
+            "Load stock perfomance-indicators into a CSV file: 3"
             ], indent=4))
         print("\n")
 
         input_value = selection()
+        print("\n")
         if input_value == 1:
-            vis = visualize(1)
+            response = visualize(1)
         elif input_value == 2:
-            vis = visualize(2)
+            response = visualize(2)
         elif input_value == 3:
-            vis = visualize(1)
-        elif input_value == 4:
-            vis = visualize(2)
+            response = data_into_csv()
         elif input_value == "break":
+            print("\n")
             break
-        if vis == "break":
+        if response == "break":
+            print("\n\n\n")
             break
     pass
 
