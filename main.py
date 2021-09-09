@@ -5,11 +5,14 @@ from visualization import visualize
 from data_into_csv import data_into_csv
 
 
-
 def selection():
+    """Returns user selection and catches input errors.
+    """
+
     input_value = input("Select a number: ").strip()
     if input_value == "break":
         return "break"
+    # catch input errors
     try:
         input_value = int(input_value)
         if (input_value > 0) and (input_value < 5):
@@ -22,7 +25,11 @@ def selection():
         selection()
 
 def main():
+    """Prompts user and calls functions based on user input.
+    """
+
     while True:
+        # user prompt
         print("\n\n\n\nType 'break' to exit the script.")
         print("\n\nSelect what you want to do: \n\n")
         print(json.dumps([ # Pretty print
@@ -32,14 +39,15 @@ def main():
             ], indent=4))
         print("\n")
 
-        input_value = selection()
+        # user selection
+        input_value = selection() 
         print("\n")
         if input_value == 1:
-            response = visualize(1)
+            response = visualize(1) # visualize piotroski F-Score
         elif input_value == 2:
-            response = visualize(2)
+            response = visualize(2) # visualize PEG-Ratio
         elif input_value == 3:
-            response = data_into_csv()
+            response = data_into_csv() # fill ticker-CSV with stock info and PI's
             print(response)
         elif input_value == "break":
             print("\n")
@@ -48,7 +56,6 @@ def main():
             print("\n\n\n")
             break
     pass
-
 
 
 # BOILERPLATE

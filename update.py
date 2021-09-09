@@ -7,6 +7,11 @@ import piotroski
 import peg
 
 def csv(ticker, csv_list, ticker_in_df):
+    """ Updates the csv file most fitting to the ticker.
+    ticker = ticker string from user input
+    csv_list = list of all CSV filepaths
+    ticker_in_df = True if the ticker is in the database
+    """
     
     filepath = "cache/usa.csv"
     df_usa = pd.read_csv(filepath, index_col=0)

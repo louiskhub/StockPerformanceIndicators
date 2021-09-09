@@ -8,31 +8,35 @@ import update
 import visualization
 
 
-
-def visual_f_score(ticker_input, df, csv_list):
-    """Visualizes the Piotroski F-Score.
+def visual_f_score(main_ticker, df, csv_list):
+    """Visualizes the Piotroski F-Score of one main stock and it's specified peers.
     Explanation of the Score: https://www.investopedia.com/terms/p/piotroski-score.asp
+    main_ticker = ticker string from user input
+    df = filtered dataframe containing all the stocks for comparison
+    csv_list = list of all CSV filepaths
     """
-    main_ticker = ticker_input
     
-    ticker_in_df = (df.Code == main_ticker).any()
-    fscore_in_df = df.loc[(df.Code == main_ticker),"F-Score"].notna().any()
+    ticker_in_df = (df.Code == main_ticker).any() # checks if the main stock is in the database
+    fscore_in_df = df.loc[(df.Code == main_ticker),"F-Score"].notna().any() # checks if the main stock's F-Score is in the database
 
     if ticker_in_df and fscore_in_df:
         main_score = df.loc[(df.Code == main_ticker), "F-Score"]
         main_index = df[df.Code == main_ticker].index[0]
-        df.drop(index=main_index, inplace=True)
+        df.drop(index=main_index, inplace=True) # The dataframe should only contain the stocks for comparison
         df.reset_index(drop=True, inplace=True)
     else:
-        yf_ticker = yf.Ticker(main_ticker)
-        if yf_ticker.info["regularMarketPrice"] == None:
-            print("\n" + main_ticker + " is not listed on Yahoo! Finance.\n")
+        yf_ticker = yf.Ticker(main_ticker) # We need to scrape Yahoo! Finance if the stock is not in out database
+        if yf_ticker.info["regularMarketPrice"] == None: # Unavailability of market price indicates that
+            print("\n" + main_ticker + " is not listed on Yahoo! Finance.\n") # the stock ticker is not listed
             return visualization.visualize(1)
         main_score = f_score(main_ticker)
-        if main_score == None:
+        if main_score == None: # Check if Yahoo! Finance provided enough information for F-Score calculation
             print("\nYahoo! Finance does not provide this metric for " + main_ticker + "\n")
             return visualization.visualize(1)
-        update.csv(main_ticker, csv_list, ticker_in_df)
+        if ticker_in_df:
+            df.loc[(df.Code == main_ticker),"F-Score"] = main_score 
+        else:
+            update.csv(main_ticker, csv_list, ticker_in_df) # If we got an F-Score we can update our CSV
     
     arr = df.loc[df.loc[:,"F-Score"].notna(),["Code","F-Score"]].values
     tickers = arr[:,0]
@@ -57,12 +61,12 @@ def visual_f_score(ticker_input, df, csv_list):
     )
     ax.set_xticklabels(tickers, rotation="45", ha="right", rotation_mode="anchor")
     plt.tick_params(
-        axis="x",          # changes apply to the x-axis
-        which="both",      # both major and minor ticks are affected
-        bottom=False,      # ticks along the bottom edge are off
-        top=False,         # ticks along the top edge are off
+        axis="x",           # changes apply to the x-axis
+        which="both",       # both major and minor ticks are affected
+        bottom=False,       # ticks along the bottom edge are off
+        top=False,          # ticks along the top edge are off
         labelbottom=False)
-    ax.set_axisbelow(True) # move the plt.grid into the background
+    ax.set_axisbelow(True)  # move the plt.grid into the background
     plt.grid(axis="y")
 
     mean = np.mean(y)
@@ -115,18 +119,20 @@ def visual_f_score(ticker_input, df, csv_list):
 
     pass
 
-
-
 def f_score(ticker):
-    """Returns the Piotroski F-Score of a yf.Ticker object.
+    """Returns the scraped Piotroski F-Score of a yf.Ticker object.
     Explanation of the Score: https://www.investopedia.com/terms/p/piotroski-score.asp
+    ticker = ticker string from user input
     """
+    
     yf_ticker = yf.Ticker(ticker)
     try:
+        # scrape Yahoo! Finance as few times as possible to minimize computation time
         financials = yf_ticker.financials
         cf = yf_ticker.cashflow
         balance = yf_ticker.balance_sheet
-
+        
+        # fill array with the fulfilled/unfulfilled F-Score criteria
         criteria = np.array([
             net_income(financials),
             roa(balance, financials),
@@ -139,16 +145,17 @@ def f_score(ticker):
             atr(balance, financials)
         ], dtype=np.bool_)
 
-        criteria_fulfilled = criteria[criteria == True]
+        criteria_fulfilled = criteria[criteria == True] # Reduce the array to the fullfilled criteria
         return criteria_fulfilled.size
     
     except:
         return None
 
-
-
 def net_income(financials_df):
-    """Checks if the latest reported Net Income is positive."""
+    """Checks if the latest reported Net Income is positive.
+    Explanation of Net Income: https://www.investopedia.com/terms/n/netincome.asp
+    financials_df = Financial Statement of the specified company
+    """
     
     net_income = financials_df.iloc[financials_df.index.get_loc("Net Income"),0]
     if (net_income > 0):
@@ -157,7 +164,11 @@ def net_income(financials_df):
         return False
 
 def roa(balance_df, financials_df):
-    """Checks if the ROA (Return on Assets) is positive."""
+    """Checks if the ROA (Return on Assets) is positive.
+    Explanation of ROA: https://www.investopedia.com/terms/r/returnonassets.asp
+    balance_df = Balance Sheet of the specified company
+    financials_df = Financial Statement of the specified company
+    """
 
     total_assets = balance_df.iloc[balance_df.index.get_loc("Total Assets"),0]
     net_income = financials_df.iloc[financials_df.index.get_loc("Net Income"),0]
@@ -168,7 +179,10 @@ def roa(balance_df, financials_df):
         return False
 
 def operating_cf(cf_df):
-    """Checks if the latest reported Operating CF (Cashflow) is positive."""
+    """Checks if the latest reported OCF (Cashflow) is positive.
+    Explanation of OCF: https://www.investopedia.com/terms/o/operatingcashflow.asp
+    cf_df = Cashflow Statement of the specified company
+    """
     
     cf = cf_df.iloc[cf_df.index.get_loc("Total Cash From Operating Activities"),0]
     if (cf > 0):
@@ -177,7 +191,10 @@ def operating_cf(cf_df):
         return False
 
 def cf_ni_ratio(cf_df, financials_df):
-    """Checks if the latest reported Operating CF (Cashflow) is larger than the latest reported NI (Net Income)."""
+    """Checks if the latest reported Operating CF (Cashflow) is larger than the latest reported NI (Net Income).
+    cf_df = Cashflow Statement of the specified company
+    financials_df = Financial Statement of the specified company
+    """
     
     cf = cf_df.iloc[cf_df.index.get_loc("Total Cash From Operating Activities"),0]
     net_income = financials_df.iloc[financials_df.index.get_loc("Net Income"),0]
@@ -187,7 +204,10 @@ def cf_ni_ratio(cf_df, financials_df):
         return False
 
 def ltd(balance_df):
-    """Checks if the current LTD (Long Term Debt) was reduced since previous year"""
+    """Checks if the current LTD (Long Term Debt) was reduced since previous year
+    Explanation of LTD: https://www.investopedia.com/terms/l/longtermdebt.asp
+    balance_df = Balance Sheet of the specified company
+    """
     
     lt_debt_curr = balance_df.iloc[balance_df.index.get_loc("Long Term Debt"),0]
     lt_debt_prev = balance_df.iloc[balance_df.index.get_loc("Long Term Debt"),1]
@@ -197,7 +217,10 @@ def ltd(balance_df):
         return False
 
 def leverage(balance_df):
-    """Checks if the leverage exposure was reduced since previous year"""
+    """Checks if the leverage exposure was reduced since previous year
+    Explanation of Leverage: https://www.investopedia.com/terms/l/leverage.asp
+    balance_df = Balance Sheet of the specified company
+    """
     
     # current year
     assets_curr = balance_df.iloc[balance_df.index.get_loc("Total Current Assets"),0]
@@ -213,7 +236,11 @@ def leverage(balance_df):
         return False
 
 def no_dilution(cf_df):
-    """Checks if the shares of investors were NOT diluted since previous year"""
+    """Checks if the shares of investors were NOT diluted since previous year
+    Explanation of Dilution: https://www.investopedia.com/terms/d/dilution.asp
+    cf_df = Cashflow Statement of the specified company
+    """
+
     try:
         issued_stock = cf_df.iloc[cf_df.index.get_loc("Issuance Of Stock"),0] # Earnings of the company through stock issuance
     except:
@@ -228,7 +255,10 @@ def no_dilution(cf_df):
         return False
 
 def gross_margin(financials_df):
-    """Checks if the gross margin grew since previous year"""
+    """Checks if the gross margin grew since previous year
+    Explanation of the Gross Margin: https://www.investopedia.com/terms/g/grossmargin.asp
+    financials_df = Financial Statement of the specified company
+    """
 
     # Net Sales (= Revenue)
     net_sales_curr = financials_df.iloc[financials_df.index.get_loc("Total Revenue"),0]
@@ -245,7 +275,11 @@ def gross_margin(financials_df):
         return False
 
 def atr(balance_df, financials_df):
-    """Checks ATR (Asset Turnover Ratio) grew since previous year"""
+    """Checks ATR (Asset Turnover Ratio) grew since previous year
+    Explanation of ATR: https://www.investopedia.com/terms/a/assetturnover.asp
+    balance_df = Balance Sheet of the specified company
+    financials_df = Financial Statement of the specified company
+    """
     
     # Net Sales (= Revenue)
     net_sales_curr = financials_df.iloc[financials_df.index.get_loc("Total Revenue"),0]

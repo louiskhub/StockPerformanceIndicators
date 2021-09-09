@@ -7,15 +7,17 @@ import matplotlib.pyplot as plt
 import update
 import visualization
 
-def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
+def visual_ratio(main_ticker, df, csv_list, scope=(10,-10)):
     """Visualizes the PEG-Ratio.
     Explanation of the PEG-Ratio: https://www.investopedia.com/terms/p/pegratio.asp
+    main_ticker = ticker string from user input
+    df = filtered dataframe containing all the stocks for comparison
+    csv_list = list of all CSV filepaths
+    scope (kwarg) = user specified range of PEG-ratios
     """
-
-    main_ticker = str(ticker_input)
     
-    ticker_in_df = (df.Code == main_ticker).any()
-    peg_in_df = df.loc[(df.Code == main_ticker),"PEG-Ratio"].notna().any()
+    ticker_in_df = (df.Code == main_ticker).any() # checks if the main stock is in the database
+    peg_in_df = df.loc[(df.Code == main_ticker),"PEG-Ratio"].notna().any() # checks if the main stock's F-Score is in the database
 
     if ticker_in_df & peg_in_df:
         main_ratio = df.loc[(df.Code == main_ticker), "PEG-Ratio"].item()
@@ -23,19 +25,18 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
         df.drop(index=main_index, inplace=True)
         df.reset_index(drop=True, inplace=True)
     else:
-        yf_ticker = yf.Ticker(main_ticker)
-        if yf_ticker.info["regularMarketPrice"] == None:
-            print("\n" + main_ticker + " is not listed on Yahoo! Finance.\n")
+        yf_ticker = yf.Ticker(main_ticker) # We need to scrape Yahoo! Finance if the stock is not in out database
+        if yf_ticker.info["regularMarketPrice"] == None: # Unavailability of market price indicates that
+            print("\n" + main_ticker + " is not listed on Yahoo! Finance.\n") # the stock ticker is not listed
             return visualization.visualize(2)
         main_ratio = ratio(main_ticker)
-        if main_ratio == None:
+        if main_ratio == None: # Check if Yahoo! Finance provided enough information for PEG-ratio calculation
             print("\nYahoo! Finance does not provide this metric for " + main_ticker + "\n")
             return visualization.visualize(2)
         if ticker_in_df:
             df.loc[(df.Code == main_ticker),"PEG-Ratio"] = main_ratio
         else:
-            usa_df = pd.read_csv("cache/usa.csv", index_col=0)
-            update.csv(main_ticker, csv_list, ticker_in_df)
+            update.csv(main_ticker, csv_list, ticker_in_df) # If we got a PEG-Ratio we can update our CSV
     
     if (main_ratio < scope[1]):
         print("\nThe minimum scope specified is not low enough to display the PEG-ratio of " + main_ticker)

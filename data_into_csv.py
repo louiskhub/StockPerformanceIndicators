@@ -8,18 +8,22 @@ import piotroski
 import peg
 
 
-
 def scrape_data(args):
+    """Returns several stock PI's scraped from Yahoo! Finance.
+    args = 2D-array containing stock tickers, counters and length of the ticker-list
+    """
+
+    ticker = args[0].strip() # make sure the ticker does not contain whitespace
     
-    ticker = str(args[0]).strip()
     score = piotroski.f_score(ticker)
     ratio = peg.ratio(ticker)
-    info = yf.Ticker(ticker).info
 
+    # get all useful stock information
+    info = yf.Ticker(ticker).info # save the info-dict in a variable to minimize computation time
     try:
         industry = info['industry']
     except:
-        industry = None
+        industry = None # Make sure that cells in the csv without data are really empty 
     try:
         sector = info['sector']
     except:
@@ -49,54 +53,62 @@ def scrape_data(args):
     except:
         grossMargin = None
 
-    print(str(args[1]) + " / " + str(args[2]))
+    print(str(args[1]) + " / " + str(args[2])) # print the counter
     return score, ratio, industry, sector, priceToBook, marketCap, fiftyDayAverage, twoHundredAverage, profitMargin, grossMargin
 
-
 def data_into_csv():
+    """Fills Ticker-CSV with the scraped stock information and PI's.
+    """
     
+    # get user inputs
     print("\n")
-    csv_input = str(input("Enter the CSV file you want to modify: ")).strip()
+    csv_input = input("Enter the CSV file you want to modify: ").strip()
     if csv_input == "break":
         return "break"
     print("\n")
     col_input = (input("Enter the implicit Index of the CSV-Column containing Stock-Tickers: ").strip())
+    # important for generalization (not every CSV has the stock tickers in the same column)
     if col_input == "break":
         return "break"
     col_input = int(col_input)
     print("\n\n")
 
+    # Catch input-errors
     try:
         csv = pd.read_csv(csv_input, index_col=0)
     except:
         return "The filename '" + csv_input + "' does not exist.\n\n\n\n"
-    
     try:
         csv_tickers = csv.iloc[:,col_input-1]
-        csv = csv.rename({csv.columns[col_input-1]: 'Code'}, axis='columns')
-        csv_tickers = csv_tickers.values
+        csv = csv.rename({csv.columns[col_input-1]: 'Code'}, axis='columns') # rename ticker-column for generalization
+        csv_tickers = csv_tickers.values # stock ticker array
     except:
         return "The Column does not contain Stock-Symbols.\n\n\n\n"
 
+    # counter for user to estimate runtime (array needed for executor.map)
     counter_array = np.arange(csv_tickers.size)
     df_size = np.full(csv_tickers.size, csv_tickers.size-1)
+    # wrap the arrays to one argument for executor.map
     args = np.column_stack((csv_tickers, counter_array, df_size))
 
-    with concurrent.futures.ThreadPoolExecutor() as executor:
+    
+    with concurrent.futures.ThreadPoolExecutor() as executor: # use ThreadPool for faster webscraping
         
-        results = executor.map(scrape_data, args)
+        results = executor.map(scrape_data, args)   # scrape all stock info
 
-        scores = np.empty(0, dtype=np.ubyte)        #piotroski F-scores
-        peg_ratios = np.empty(0)                    #pegRatios
-        industries = np.empty(0, dtype=np.str_)     #industries
-        sectors = np.empty(0, dtype=np.str_)        #sectors
-        ptbs = np.empty(0)                          #pricesToBooks
-        mcaps = np.empty(0)                         #marketCaps
-        fiftyDayAvrgs = np.empty(0)                 #fiftyDayAverages
-        twoHundredAvrgs = np.empty(0)               #twoHundredAverages
-        profitMargins = np.empty(0)                 #profitMargins
-        grossMargins = np.empty(0)                  #grossMargins
+        # create array for every stock info
+        scores = np.empty(0, dtype=np.ubyte)        # piotroski F-scores with values 0-9
+        peg_ratios = np.empty(0)                    # PEG ratios
+        industries = np.empty(0, dtype=np.str_)     # Industries
+        sectors = np.empty(0, dtype=np.str_)        # Sectors
+        ptbs = np.empty(0)                          # pricesToBooks
+        mcaps = np.empty(0)                         # marketCaps
+        fiftyDayAvrgs = np.empty(0)                 # fiftyDayAverages
+        twoHundredAvrgs = np.empty(0)               # twoHundredAverages
+        profitMargins = np.empty(0)                 # profitMargins
+        grossMargins = np.empty(0)                  # grossMargins
 
+        # fill arrays
         for result in results:
             scores = np.append(scores, result[0])
             peg_ratios = np.append(peg_ratios, result[1])
@@ -109,6 +121,7 @@ def data_into_csv():
             profitMargins = np.append(profitMargins, result[8])
             grossMargins = np.append(grossMargins, result[9])
 
+    # fill dataframe columns
     csv['F-Score'] = scores
     csv['PEG-Ratio'] = peg_ratios
     csv['Industry'] = industries
@@ -119,11 +132,6 @@ def data_into_csv():
     csv['200 Day Av'] = twoHundredAvrgs
     csv['Profit Margin'] = profitMargins
     csv['Gross Margin'] = grossMargins
-    csv.to_csv(csv_input)
+    csv.to_csv(csv_input) # save in csv
 
     return "\n\n'" + csv_input + "' successfully filled!\n"
-
-
-# BOILERPLATE
-if __name__ == "__main__":
-    print(data_into_csv())
