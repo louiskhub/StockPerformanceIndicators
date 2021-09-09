@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 # local imports
-import errors
 import update
+import visualization
 
 
 
@@ -13,7 +13,6 @@ def visual_f_score(ticker_input, df, csv_list):
     """Visualizes the Piotroski F-Score.
     Explanation of the Score: https://www.investopedia.com/terms/p/piotroski-score.asp
     """
-
     main_ticker = ticker_input
     
     ticker_in_df = (df.Code == main_ticker).any()
@@ -27,10 +26,12 @@ def visual_f_score(ticker_input, df, csv_list):
     else:
         yf_ticker = yf.Ticker(main_ticker)
         if yf_ticker.info["regularMarketPrice"] == None:
-            raise errors.TickerError(main_ticker)
+            print("\n" + main_ticker + " is not listed on Yahoo! Finance.\n")
+            return visualization.visualize(1)
         main_score = f_score(main_ticker)
         if main_score == None:
-            raise errors.MetricError(main_ticker)
+            print("\nYahoo! Finance does not provide this metric for " + main_ticker + "\n")
+            return visualization.visualize(1)
         update.csv(main_ticker, csv_list, ticker_in_df)
     
     arr = df.loc[df.loc[:,"F-Score"].notna(),["Code","F-Score"]].values
@@ -70,7 +71,7 @@ def visual_f_score(ticker_input, df, csv_list):
     ax.fill_between(x, std_top, std_down, alpha=0.3)
     plt.plot(x,np.full(length, mean),"b-")
 
-    sc = ax.scatter(x, y, s=20, c="black", marker='o')
+    sc = ax.scatter(x, y, s=5, c="black", marker='o')
     main_x = np.searchsorted(y, main_score)
     ax.scatter(main_x, main_score, s=100, c="red", marker='o', edgecolors='black')
 

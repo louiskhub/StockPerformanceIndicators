@@ -42,9 +42,6 @@ def csv(ticker, csv_list, ticker_in_df):
 
     df.loc[index, "Code"] = ticker
     df.loc[index, "Name"] = info["longName"]
-    df.loc[index, "Country"] = country
-    df.loc[index, "Exchange"] = info["exchange"]
-    df.loc[index, "Currency"] = info["financialCurrency"]
     df.loc[index, "F-Score"] = piotroski.f_score(ticker)
     df.loc[index, "PEG-Ratio"] = peg.ratio(ticker)
     df.loc[index, "Industry"] = info['industry']
@@ -55,6 +52,14 @@ def csv(ticker, csv_list, ticker_in_df):
     df.loc[index, "200 Day Av"] = info['twoHundredDayAverage']
     df.loc[index, "Profit Margin"] = info['profitMargins']
     df.loc[index, "Gross Margin"] = info['grossMargins']
+    if "Name" in df.columns:
+        df.loc[index, "Name"] = info["longName"]
+    if "Country" in df.columns:
+        df.loc[index, "Country"] = country
+    if "Exchange" in df.columns:
+        df.loc[index, "Exchange"] = info["exchange"]
+    if "Currency" in df.columns:
+        df.loc[index, "Currency"] = info["financialCurrency"]
     df.reset_index(drop=True, inplace=True)
     df.to_csv(filepath)
 

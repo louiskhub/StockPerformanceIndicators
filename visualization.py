@@ -16,11 +16,10 @@ def load_csvs():
 def choose_comparison(ticker_input, indicator):
     print("\n\nCompare the " + indicator + " of " + ticker_input + " by:\n\n")
     print(json.dumps([ # Pretty print
-        "Country: 1",
-        "Industry: 2",
-        "Sector: 3",
-        "Market Capitalization: 4",
-        "All cached stocks : 5"
+        "Industry: 1",
+        "Sector: 2",
+        "Market Capitalization: 3",
+        "All cached stocks : 4"
         ], indent=4))
     print("\n")
     input_value = input("Select a number: ").strip()
@@ -28,13 +27,13 @@ def choose_comparison(ticker_input, indicator):
         return "break"
     try:
         input_value = int(input_value)
-        if (input_value > 0) and (input_value < 6):
+        if (input_value > 0) and (input_value < 5):
             return input_value
         else:
-            print("You need to select a value from 1-5.")
+            print("You need to select a value from 1-4.")
             choose_comparison(ticker_input, indicator)
     except:
-        print("You need to select a value from 1-5.")
+        print("You need to select a value from 1-4.")
         choose_comparison(ticker_input, indicator)
 
 def mcap_categorization(mcap):
@@ -68,18 +67,14 @@ def filter_df(comp, df, input_value, indicator):
     ticker_in_df = (df.Code == input_value).any()
     if ticker_in_df:
         if comp == 1:
-            country = df.loc[(df.Code == input_value),"Country"].item()
-            df.drop(df[df.Country != country].index, inplace=True)
-            df.reset_index(drop=True, inplace=True)
-        elif comp == 2:
             industry = df.loc[(df.Code == input_value),"Industry"].item()
             df.drop(df[df.Industry != industry].index, inplace=True)
             df.reset_index(drop=True, inplace=True)
-        elif comp == 3:
+        elif comp == 2:
             sector = df.loc[(df.Code == input_value),"Sector"].item()
             df.drop(df[df.Sector != sector].index, inplace=True)
             df.reset_index(drop=True, inplace=True)
-        elif comp == 4:
+        elif comp == 3:
             mcap = df.loc[(df.Code == input_value),"Market Cap"].item()
 
             df.drop(df[(mcap_categorization(df.loc[:,"Market Cap"].copy()) != mcap_categorization(mcap))].index, inplace=True)
@@ -87,29 +82,22 @@ def filter_df(comp, df, input_value, indicator):
     else:
         ticker = yf.Ticker(input_value)
         info = ticker.info
+        if info["regularMarketPrice"] == None:
+            print("\n" + input_value + " is not listed on Yahoo! Finance.\n")
+            return visualize(indicator)
         if comp == 1:
-            country = info["country"]
-            if country == "China": # This is not because I think that HK is part of China but rather for avoidance 
-                country = "Hong Kong" # of mixups in the Ticker-Database!
-            elif country == "United States":
-                country = "USA"
-            elif country == "United Kingdom":
-                country = "UK"
-            df.drop(df[df.Country != country].index, inplace=True)
-            df.reset_index(drop=True, inplace=True)
-        elif comp == 2:
             industry = info["industry"]
             df.drop(df[df.Industry != industry].index, inplace=True)
             df.reset_index(drop=True, inplace=True)
-        elif comp == 3:
+        elif comp == 2:
             sector = info["sector"]
             df.drop(df[df.Sector != sector].index, inplace=True)
             df.reset_index(drop=True, inplace=True)
-        elif comp == 4:
+        elif comp == 3:
             mcap = info["marketCap"]
             df.drop(df[(mcap_categorization(df.loc[:,"Market Cap"].copy()) != mcap_categorization(mcap))].index, inplace=True)
             df.reset_index(drop=True, inplace=True)
-    if df.index.size > 0:
+    if df.index.size > 1:
         return df
     else:
         print("\n\nUnfortunately there are no cached stocks available for your selection. Please try again.\n")

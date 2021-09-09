@@ -3,7 +3,6 @@ import json
 # local imports
 from visualization import visualize
 from data_into_csv import data_into_csv
-import errors
 
 
 
@@ -16,10 +15,10 @@ def selection():
         if (input_value > 0) and (input_value < 5):
             return input_value
         else:
-            print("You need to select a value from 1-4.")
+            print("You need to select a value from 1-3.")
             selection()
     except:
-        print("You need to select a value from 1-4.")
+        print("You need to select a value from 1-3.")
         selection()
 
 def main():
@@ -41,6 +40,7 @@ def main():
             response = visualize(2)
         elif input_value == 3:
             response = data_into_csv()
+            print(response)
         elif input_value == "break":
             print("\n")
             break

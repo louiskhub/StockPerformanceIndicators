@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 # local imports
-import errors
 import update
 import visualization
 
@@ -26,10 +25,12 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
     else:
         yf_ticker = yf.Ticker(main_ticker)
         if yf_ticker.info["regularMarketPrice"] == None:
-            raise errors.TickerError(main_ticker)
+            print("\n" + main_ticker + " is not listed on Yahoo! Finance.\n")
+            return visualization.visualize(2)
         main_ratio = ratio(main_ticker)
         if main_ratio == None:
-            raise errors.MetricError(main_ticker)
+            print("\nYahoo! Finance does not provide this metric for " + main_ticker + "\n")
+            return visualization.visualize(2)
         if ticker_in_df:
             df.loc[(df.Code == main_ticker),"PEG-Ratio"] = main_ratio
         else:
@@ -134,8 +135,6 @@ def visual_ratio(ticker_input, df, csv_list, scope=(10,-10)):
     plt.show()
 
     return df
-
-
 
 def ratio(ticker):
     """Returns the PEG-Ratio of a yf.Ticker object.

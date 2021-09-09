@@ -55,10 +55,15 @@ def scrape_data(args):
 
 def data_into_csv():
     
-    print("\n\n\n\n")
-    csv_input = str(input("Enter the CSV file you want to modify: ")).strip()
     print("\n")
-    col_input = int(input("Enter the implicit Index of the CSV-Column containing Stock-Tickers: ").strip())
+    csv_input = str(input("Enter the CSV file you want to modify: ")).strip()
+    if csv_input == "break":
+        return "break"
+    print("\n")
+    col_input = (input("Enter the implicit Index of the CSV-Column containing Stock-Tickers: ").strip())
+    if col_input == "break":
+        return "break"
+    col_input = int(col_input)
     print("\n\n")
 
     try:
@@ -116,7 +121,7 @@ def data_into_csv():
     csv['Gross Margin'] = grossMargins
     csv.to_csv(csv_input)
 
-    return "\n\n'" + csv_input + "' successfully modified!\n\n\n\n"
+    return "\n\n'" + csv_input + "' successfully filled!\n"
 
 
 # BOILERPLATE
