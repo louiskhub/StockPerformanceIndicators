@@ -19,10 +19,10 @@ def selection():
             return input_value
         else:
             print("You need to select a value from 1-3.")
-            selection()
+            return selection()
     except:
         print("You need to select a value from 1-3.")
-        selection()
+        return selection()
 
 def main():
     """Prompts user and calls functions based on user input.
@@ -41,6 +41,7 @@ def main():
 
         # user selection
         input_value = selection() 
+        response = ""
         print("\n")
         if input_value == 1:
             response = visualize(1) # visualize piotroski F-Score

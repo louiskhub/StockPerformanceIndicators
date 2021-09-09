@@ -22,7 +22,6 @@ This projects main functionality is the visualization of the following stock per
 3. Structure
 4. Known Issues and Troubleshooting
 5. Sample Stock Tickers
-6. Sources
 
 ---
 ## Requirements
@@ -69,7 +68,7 @@ The stock PI's are always selected out of [cache/](cache/). However, if [cache/]
 ### CSV Downloader
 
 You can also download CSV's containing stock tickers fairly easily yourself with [csv_downloader.py](csv_downloader.py).
-In this file you will find the code that I used to download the ticker-CSV's I used for [cache/](cache/).
+In this file you will find the code that I used to download the ticker-CSV's from [EOD Historical Data](https://eodhistoricaldata.com/financial-apis/exchanges-api-list-of-tickers-and-trading-hours/#Get_List_of_Exchanges) into [cache/](cache/).
 You can use it as a guide.
 
 ---
@@ -102,8 +101,3 @@ You can use it as a guide.
 - `MSFT` for Microsoft, Inc.
 - `BABA` for Alibaba Group Holding, Ltd.
 - You can search for any public company on [Yahoo! Finance](https://finance.yahoo.com/) and it's ticker will appear next to it's name.
-
----
-## Sources
-- Yfinance: https://github.com/ranaroussi/yfinance
-- EOD Historical Data: https://eodhistoricaldata.com/financial-apis/exchanges-api-list-of-tickers-and-trading-hours/#Get_List_of_Exchanges

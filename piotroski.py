@@ -31,30 +31,31 @@ def visual_f_score(main_ticker, df, csv_list):
             return visualization.visualize(1)
         main_score = f_score(main_ticker)
         if main_score == None: # Check if Yahoo! Finance provided enough information for F-Score calculation
+            update.csv(main_ticker, csv_list, ticker_in_df) # Let's update our CSV
             print("\nYahoo! Finance does not provide this metric for " + main_ticker + "\n")
             return visualization.visualize(1)
-        if ticker_in_df:
-            df.loc[(df.Code == main_ticker),"F-Score"] = main_score 
-        else:
-            update.csv(main_ticker, csv_list, ticker_in_df) # If we got an F-Score we can update our CSV
+        update.csv(main_ticker, csv_list, ticker_in_df) # Let's update our CSV
     
+    # Save every ticker with it's corresponding F-Score in arrays
     arr = df.loc[df.loc[:,"F-Score"].notna(),["Code","F-Score"]].values
     tickers = arr[:,0]
     y = arr[:,1]
+    # sort the tickers after F-Score for prettier plotting
     sorted_indices = y.argsort(kind="quicksort")
     y = y[sorted_indices]
     tickers = tickers[sorted_indices]
+    # Save the number of tickers for axes setting
     length = tickers.size
     x = np.arange(length)
 
+    # Prepare the plotting
     fig = plt.figure(figsize=(17, 10), dpi=80)
     ax = fig.add_subplot()
-
     ax.set(
         title = "Piotroski F-scores",
-        ylim = [-0.5, 9.5],
+        ylim = [-0.5, 9.5],             # The score reaches from 0 to 9 (0.5 margin is prettier)
         yticks = np.arange(10),
-        xlim = [-1, x.size],
+        xlim = [-1, length],
         xticks = x,
         ylabel = "Scores", 
         xlabel = "Tickers"
@@ -69,23 +70,28 @@ def visual_f_score(main_ticker, df, csv_list):
     ax.set_axisbelow(True)  # move the plt.grid into the background
     plt.grid(axis="y")
 
+    # Plot the mean and standard deviation of the comparison F-Scores
     mean = np.mean(y)
     std_top = np.full(length, mean + np.std(y))
     std_down = np.full(length, mean - np.std(y))
     ax.fill_between(x, std_top, std_down, alpha=0.3)
     plt.plot(x,np.full(length, mean),"b-")
 
-    sc = ax.scatter(x, y, s=5, c="black", marker='o')
-    main_x = np.searchsorted(y, main_score)
-    ax.scatter(main_x, main_score, s=100, c="red", marker='o', edgecolors='black')
+    sc = ax.scatter(x, y, s=5, c="black", marker='o')   # Plot the comparison stocks 
+    main_x = np.searchsorted(y, main_score)             # Find out where to place the main stock along the x axis
+    ax.scatter(main_x, main_score, s=100, c="red", marker='o', edgecolors='black') # Plot the main stock
 
+    # Annotate the main stock (always displayed)
     main_annot = ax.annotate(main_ticker, (main_x,main_score),
                         xytext=(-30,30),
                         textcoords="offset points",
                         bbox=dict(boxstyle="round", fc="w"),
                         arrowprops=dict(shrinkB=5, arrowstyle="->"))
+    # Make the annotation prettier than the annotations of the comparison stocks
     main_annot.get_bbox_patch().set_facecolor("red")
     main_annot.get_bbox_patch().set_alpha(0.5)
+
+    # Hide the annotations of the comparison stocks
     annot = ax.annotate("", xy=(0,0),
                         xytext=(-20,20),
                         textcoords="offset points",
@@ -94,13 +100,19 @@ def visual_f_score(main_ticker, df, csv_list):
     annot.set_visible(False)
 
     def update_annot(ind):
-        pos = sc.get_offsets()[ind["ind"][0]]
+        """If the user's curser hovers over comparison data points, their annotation is updated/displayed.
+        ind = list of indexes for all points under the curser
+        """
+        pos = sc.get_offsets()[ind["ind"][0]]                               # Get position of curser
         annot.xy = pos
-        text = "{}".format(" ".join([tickers[n] for n in ind["ind"]]))
+        text = "{}".format(" ".join([tickers[n] for n in ind["ind"]]))      # The annotation content
         annot.set_text(text)
-        annot.get_bbox_patch().set_alpha(0.4)
+        annot.get_bbox_patch().set_alpha(0.4)                               # Make annotation prettier
 
     def hover(event):
+        """If the user's curser hovers over comparison datapoints, 'update_annot()' is called.
+        event = motion_notify_event (curser hovers over datapoint)
+        """
         vis = annot.get_visible()
         if event.inaxes == ax:
             cont, ind = sc.contains(event)
@@ -113,10 +125,8 @@ def visual_f_score(main_ticker, df, csv_list):
                     annot.set_visible(False)
                     fig.canvas.draw_idle()
 
-    fig.canvas.mpl_connect("motion_notify_event", hover)
-
+    fig.canvas.mpl_connect("motion_notify_event", hover)                    # Enable hover -> show annotation
     plt.show()
-
     pass
 
 def f_score(ticker):

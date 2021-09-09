@@ -26,7 +26,7 @@
 24,1SI.DE,Snap Inc,Germany,XETRA,EUR,Common Stock,US83304A1060,3.0,,Internet Content & Information,Communication Services,56.883347,100263501824.0,62.436855,53.172165,-0.22489001,0.54027003
 25,1T2.DE,VST BUILDING TECHS AG,Germany,XETRA,EUR,Common Stock,,,,,,,,8.422857,8.996099,,
 26,1TY.DE,Prosus N.V,Germany,XETRA,EUR,Common Stock,,5.0,,Internet Content & Information,Communication Services,2.935884,125521092608.0,74.29943,85.697586,1.45602,0.32467
-27,1U1.DE,1&1 AG,Germany,XETRA,EUR,Common Stock,DE0005545503,,,Telecom Services,Communication Services,0.9345728,4655989760.0,25.898857,25.379646,0.06312,0.27184
+27,1U1.DE,1&1 AG,Germany,GER,EUR,Common Stock,DE0005545503,,,Telecom Services,Communication Services,0.9382303,4741528064.0,25.993334,25.40007,0.06312,0.27184
 28,1WR.DE,WestRock Company,Germany,XETRA,EUR,Common Stock,,4.0,,Packaging & Containers,Consumer Cyclical,1.0583678,11706443776.0,42.35943,44.10766,-0.04063,0.17899
 29,1YD.DE,Broadcom Inc.,Germany,XETRA,EUR,Common Stock,,,,,,,,410.57,393.07874,,
 30,2EM.DE,Ergomed plc,Germany,XETRA,EUR,Common Stock,GB00BN7ZCY67,,,Biotechnology,Healthcare,16.127542,851397760.0,14.827143,14.137943,0.112069994,0.5522
@@ -646,7 +646,7 @@
 644,RRTL.DE,RTL Group S.A,Germany,XETRA,EUR,Common Stock,LU0061462528,,,,,,,,,,
 645,RSL2.DE,R. STAHL AG,Germany,XETRA,EUR,Common Stock,DE000A1PHBB5,,,,,,,,,,
 646,RTC.DE,RealTech AG,Germany,XETRA,EUR,Common Stock,DE0007008906,,,,,,,,,,
-647,RWE.DE,RWE AG,Germany,XETRA,EUR,Common Stock,DE0007037129,,,,,,,,,,
+647,RWE.DE,RWE Aktiengesellschaft,Germany,GER,EUR,Common Stock,DE0007037129,7.0,,Utilities—Diversified,Utilities,1.1549739,22376120320.0,31.658611,31.804195,0.08975001,0.17512
 648,RY4C.DE,Ryanair Holdings plc,Germany,XETRA,EUR,Common Stock,,,,,,,,,,,
 649,RY8.DE,ROY Asset Holding SE,Germany,XETRA,EUR,Common Stock,DE000RYSE888,,,,,,,,,,
 650,RYS1.DE,The Royal Bank of Scotland Group plc,Germany,XETRA,EUR,Common Stock,GB00B7T77214,,,,,,,,,,

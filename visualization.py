@@ -42,11 +42,11 @@ def choose_comparison(ticker_input, indicator):
         if (input_value > 0) and (input_value < 5):
             return input_value
         else:
-            print("You need to select a value from 1-4.")
-            choose_comparison(ticker_input, indicator)
+            print("\n\n\n\nYou need to select a value from 1-4!\n\n")
+            return choose_comparison(ticker_input, indicator)
     except:
-        print("You need to select a value from 1-4.")
-        choose_comparison(ticker_input, indicator)
+        print("\n\n\n\nYou need to select a value from 1-4!\n\n")
+        return choose_comparison(ticker_input, indicator)
 
 def mcap_categorization(mcap):
     """Returns either
@@ -180,7 +180,7 @@ def visualize(indicator):
         df_filtered = filter_df(comp, df, ticker_input, indicator) # filter the dataframe
         piotroski.visual_f_score(ticker_input, df_filtered, csv_list) # plot the F-Score
     
-    if indicator == 2:
+    elif indicator == 2:
         comp = choose_comparison(ticker_input, "PEG-Ratio")
         if comp == "break":
             return "break"
