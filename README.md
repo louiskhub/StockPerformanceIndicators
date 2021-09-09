@@ -30,7 +30,7 @@ This projects main functionality is the visualization of the following stock per
 - Python 3 or greater
 - Installed packages listed in  [requirements.txt](requirements.txt) (e.g. with pip install -r requirements.txt)
 
-
+---
 ## Project Description
 ### User Interaction
 
@@ -72,11 +72,12 @@ You can also download CSV's containing stock tickers fairly easily yourself with
 In this file you will find the code that I used to download the ticker-CSV's I used for [cache/](cache/).
 You can use it as a guide.
 
+---
 ## Structure
 
 ![Flow Diagram](examples/flow_diagram.png)
 
-
+---
 ## Known Issues and Troubleshooting
 
 1. Issues related to [Yahoo! Finance](https://finance.yahoo.com/)
@@ -94,6 +95,7 @@ You can use it as a guide.
 
 3. Because the [cache/](cache/) was pre-downloaded and is not regularly updated, I cannot guarantee for the accuracy of the cached data.
 
+---
 ## Sample Stock Tickers
 
 - `AAPL` for Apple, Inc.
@@ -101,6 +103,7 @@ You can use it as a guide.
 - `BABA` for Alibaba Group Holding, Ltd.
 - You can search for any public company on [Yahoo! Finance](https://finance.yahoo.com/) and it's ticker will appear next to it's name.
 
+---
 ## Sources
 - Yfinance: https://github.com/ranaroussi/yfinance
 - EOD Historical Data: https://eodhistoricaldata.com/financial-apis/exchanges-api-list-of-tickers-and-trading-hours/#Get_List_of_Exchanges
