@@ -9,6 +9,7 @@ This projects main functionality is the visualization of the following stock per
 2. [PEG-ratio](https://www.investopedia.com/terms/p/pegratio.asp)
 
 ---
+## Table of Contents
 
 1. Requirements
 2. Project Description
