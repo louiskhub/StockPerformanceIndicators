@@ -9,6 +9,7 @@ This projects main functionality is the visualization of the following stock per
 2. [PEG-ratio](https://www.investopedia.com/terms/p/pegratio.asp)
 
 ---
+## Table of Contents
 
 1. Requirements
 2. Project Description
@@ -61,7 +62,7 @@ The <span style="color:blue">blue</span> line indicates the [mean](https://numpy
 When comparing stock PI's, one thing is crucial: A large database. To retreive this data I used the libary [yfinance](https://github.com/ranaroussi/yfinance) which scrapes [Yahoo! Finance](https://finance.yahoo.com/).
 Unfortunately the computation time for the requests being send to [Yahoo! Finance](https://finance.yahoo.com/) is very long. This results in a huge detriment to user experience if  real-time scraping of a large stock-database is performed.
 
-My solution for this problem: I implemented [data_into_csv.py](data_into_csv.py) to pre-downloaded stock PI's and save them in the CSV files located in [cache/](cache/).
+My solution for this problem: I implemented [data_into_csv.py](data_into_csv.py) to pre-download stock PI's and save them in the CSV files located in [cache/](cache/).
 
 The stock PI's are always selected out of [cache/](cache/). However, if [cache/](cache/) does not contain the `main stock PI`, the most-fitting CSV-file (chosen by country) is automatically updated with real-time data from [Yahoo! Finance](https://finance.yahoo.com/).
 
