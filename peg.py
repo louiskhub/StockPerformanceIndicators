@@ -8,11 +8,11 @@ import update
 import visualization
 
 def visual_ratio(main_ticker, df, csv_list, scope=(10,-10)):
-    """Visualizes the PEG-Ratio.
+    """Visualizes the PEG-Ratio of one main stock and it's specified peers with Matplotlib.
     Explanation of the PEG-Ratio: https://www.investopedia.com/terms/p/pegratio.asp
     main_ticker = ticker string from user input
     df = filtered dataframe containing all the stocks for comparison
-    csv_list = list of all CSV filepaths
+    csv_list = list of all CSV filepaths being passed to update.csv()
     scope (kwarg) = user specified range of PEG-ratios
     """
     

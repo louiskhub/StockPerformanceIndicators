@@ -9,11 +9,11 @@ import visualization
 
 
 def visual_f_score(main_ticker, df, csv_list):
-    """Visualizes the Piotroski F-Score of one main stock and it's specified peers.
+    """Visualizes the Piotroski F-Score of one main stock and it's specified peers with Matplotlib.
     Explanation of the Score: https://www.investopedia.com/terms/p/piotroski-score.asp
     main_ticker = ticker string from user input
     df = filtered dataframe containing all the stocks for comparison
-    csv_list = list of all CSV filepaths
+    csv_list = list of all CSV filepaths being passed to update.csv()
     """
     
     ticker_in_df = (df.Code == main_ticker).any() # checks if the main stock is in the database
