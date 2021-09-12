@@ -631,7 +631,7 @@
 629,QIA.DE,QIAGEN N.V,Germany,XETRA,EUR,Common Stock,NL0012169213,,,,,,,,,,
 630,R6C.DE,Royal Dutch Shell plc,Germany,XETRA,EUR,Common Stock,,,,,,,,,,,
 631,R6C3.DE,Royal Dutch Shell plc,Germany,XETRA,EUR,Common Stock,,,,,,,,,,,
-632,RAA.DE,RATIONAL Aktiengesellschaft,Germany,XETRA,EUR,Common Stock,DE0007010803,7.0,,Industrial Distribution,Industrials,19.200228,10721909760.0,928.71716,774.483,0.17291,0.56215
+632,RAA.DE,RATIONAL Aktiengesellschaft,Germany,GER,EUR,Common Stock,DE0007010803,7.0,,Industrial Distribution,Industrials,19.62826,10674155520.0,937.4429,779.11816,0.17291,0.56215
 633,RAW.DE,Raiffeisen Bank International AG,Germany,XETRA,EUR,Common Stock,,,,,,,,,,,
 634,RCMN.DE,RCM Beteiligungs AG,Germany,XETRA,EUR,Common Stock,DE000A1RFMY4,,,,,,,,,,
 635,RDEB.DE,RELX PLC,Germany,XETRA,EUR,Common Stock,,,,,,,,,,,
@@ -831,3 +831,4 @@
 829,ZO1.DE,zooplus AG,Germany,XETRA,EUR,Common Stock,DE0005111702,,,,,,,,,,
 830,ZOE.DE,Zoetis Inc,Germany,XETRA,EUR,Common Stock,,,,,,,,,,,
 831,ZSOL.DE,Solutiance AG,Germany,XETRA,EUR,Common Stock,DE0006926504,,,,,,,,,,
+832,VWAGY,Volkswagen AG,Germany,PNK,EUR,,,6.0,,Auto Manufacturers,Consumer Cyclical,1.1981289,165637898240.0,33.94506,33.286484,0.07098,0.19168
